@@ -57,23 +57,13 @@ const StyledSubtitle = styled.h3`
   }
 `
 
-const StyledEmailLink = styled.a`
-  ${mixins.bigButton};
-  margin-top: 20px;
-`
-
-const Landing = () => {
+const Trending = () => {
   
     return (
-      <StyledContainer id="landing">
-        <StyledTitle>Meet FoodBot</StyledTitle>
-        <StyledSubtitle>A chatbot to help you discover where to eat in Auckland.</StyledSubtitle>
-        <StyledSubtitle>Powered by Zomato</StyledSubtitle>
-        <div>
-          <StyledEmailLink href={`mailto:rykumar13@gmail.com`}>Get Started</StyledEmailLink>
-        </div>
+      <StyledContainer id="trending">
+        <StyledSubtitle>Trending in Auckland this week</StyledSubtitle>
       </StyledContainer>
     )
   }
   
-  export default Landing
+  export default Trending

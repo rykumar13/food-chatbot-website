@@ -1,0 +1,15 @@
+.Restaurant5-widget {
+    color: black;
+}
+
+.Restaurant5-widget-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.Restaurant5-widget-list-item {
+    font-size: 1rem;
+    margin: 8px 0;
+    text-align: left;
+}

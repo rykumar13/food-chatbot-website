@@ -1,0 +1,13 @@
+.ContactHrsBtns1-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .ContactHrsBtns1-button {
+    margin: 5px;
+    border-radius: 25px;
+    padding: 8px;
+    border-color: blue;
+    background: transparent;
+    text-align: center;
+  }

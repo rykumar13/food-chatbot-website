@@ -1,8 +1,14 @@
 import React from "react"
+import Chatbot from "react-chatbot-kit";
+
 import styled from "styled-components"
 import theme from "../../styles/theme"
 import Section from "../../styles/Section"
 import mixins from "../../styles/mixins"
+
+import ActionProvider from "../../chatbot/ActionProvider";
+import config from "../../chatbot/config";
+import MessageParser from "../../chatbot/MessageParser";
 
 const { colors, fonts, fontSizes } = theme
 
@@ -61,19 +67,30 @@ const StyledEmailLink = styled.a`
   ${mixins.bigButton};
   margin-top: 20px;
 `
+const saveMessages = (messages) => {
+  localStorage.setItem("chat_messages", JSON.stringify(messages));
+};
 
-const Landing = () => {
+const loadMessages = () => {
+  const messages = JSON.parse(localStorage.getItem("chat_messages"));
+  return messages;
+};
+
+const ChatbotArea = () => {
   
     return (
-      <StyledContainer id="landing">
-        <StyledTitle>Meet FoodBot</StyledTitle>
-        <StyledSubtitle>A chatbot to help you discover where to eat in Auckland.</StyledSubtitle>
-        <StyledSubtitle>Powered by Zomato</StyledSubtitle>
-        <div>
-          <StyledEmailLink href={`mailto:rykumar13@gmail.com`}>Get Started</StyledEmailLink>
-        </div>
+      <StyledContainer id="Chatbot">
+        <StyledTitle>Chat with Foodbot</StyledTitle>
+        <StyledSubtitle>Let me suggest you a place to eat in Auckland. Have a craving for a certain cuisine? let me find a place for you...</StyledSubtitle>
+        <Chatbot
+          config={config}
+          actionProvider={ActionProvider}
+          messageHistory={loadMessages()}
+          messageParser={MessageParser}
+          saveMessages={saveMessages}
+        />
       </StyledContainer>
     )
   }
   
-  export default Landing
+  export default ChatbotArea

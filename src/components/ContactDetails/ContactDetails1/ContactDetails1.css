@@ -1,0 +1,15 @@
+.ContactDetails1-widget {
+    color: black;
+}
+
+.ContactDetails1-widget-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.ContactDetails1-widget-list-item {
+    font-size: 1rem;
+    margin: 8px 0;
+    text-align: left;
+}
