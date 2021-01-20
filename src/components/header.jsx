@@ -1,5 +1,4 @@
 import React from "react"
-import Headroom from "react-headroom"
 import styled from "styled-components"
 import theme from "../styles/theme"
 import { navLinks } from "../config"
@@ -7,13 +6,10 @@ import mixins from "../styles/mixins"
 const { colors, fonts, fontSizes } = theme
 
 const StyledContainer = styled.div`
-box-shadow: -10px 0px 30px -15px ${colors.navy_text};
-//background-color: ${colors.bg_greyGreen};
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  top: 0;
-  height: 80px;
+  justify-content: flex-end;
+  // align-items: center;
+  height: 0px;
   @media (max-width: 63em) {
     padding: 0 40px;
   }
@@ -22,15 +18,15 @@ box-shadow: -10px 0px 30px -15px ${colors.navy_text};
   }
 `
 const NavList = styled.ol`
-  color: ${colors.cream_text};
+  // color: ${colors.white};
   ${mixins.flexBetween};
   list-style-type: none;
-  margin-top: 15px;
+  margin-top: 25px;
+  margin-right: 80px;
 `
 const NavListItem = styled.li`
   margin: 35px 0px 35px 55px;
   position: relative;
-  font-size: ${fontSizes.smish};
 `
 const MenuLink = styled.a`
   font-family: ${fonts.Calibre};
@@ -40,7 +36,6 @@ const MenuLink = styled.a`
 
 const Header = () => {
     return (
-        <Headroom>
             <StyledContainer>
             <NavList>
             {navLinks.map(({ url, name }) => (
@@ -52,7 +47,6 @@ const Header = () => {
             ))}
           </NavList>
             </StyledContainer>
-        </Headroom>
     )
   }
   

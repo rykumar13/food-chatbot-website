@@ -34,7 +34,7 @@ const About = () => {
 
   return (
     <StyledContainer id="about">
-      <StyledTitle>Powered by Zomato</StyledTitle>
+      <StyledTitle>About FoodBot</StyledTitle>
       <StyledDiv dangerouslySetInnerHTML={{ __html: "Placeholder about how I was built" }} />
     </StyledContainer>
   )

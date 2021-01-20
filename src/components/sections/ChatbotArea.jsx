@@ -10,22 +10,23 @@ import ActionProvider from "../../chatbot/ActionProvider";
 import config from "../../chatbot/config";
 import MessageParser from "../../chatbot/MessageParser";
 
-import bg from "../../images/chatbot_bg.jpg";
+import bg from "../../images/landing1.jpg";
 
 const { colors, fonts, fontSizes } = theme;
 
 const StyledContainer = styled(Section)`
+  // color: ${colors.cream_text};
   background-image: url(${bg});
   background-position: center;
   background-size: cover;
   max-width: 100%;
-  max-height:100%;
+  // max-height:100%;
   object-fit: fill;
   padding: 60px 0;
   ${mixins.flexCenter};
   flex-direction: column;
   align-items: flex-center;
-  min-height: 90vh;
+  min-height: 100vh;
   @media (max-width: 48em) {
     padding-top: 00px;
   }
@@ -36,10 +37,11 @@ const StyledContainer = styled(Section)`
 
 const StyledChat = styled.div`
 max-width: 20%;
+// margin-right: 400px;
 `;
 
 const StyledTitle = styled.h2`
-  color: ${colors.cream_text};
+  // color: ${colors.white};
   font-size: 80px;
   line-height: 1.1;
   margin: 0;
@@ -58,8 +60,8 @@ const StyledTitle = styled.h2`
 `;
 
 const StyledSubtitle = styled.h3`
-  color: ${colors.cream_text};
-  font-size: 30px;
+  // color: ${colors.white};
+  font-size: 50px;
   font-weight: normal;
   line-height: 1.1;
   @media (max-width: 63em) {
@@ -89,16 +91,25 @@ const loadMessages = () => {
   return messages;
 };
 
+const StyledDiv = styled.div`
+  font-family: ${fonts.Calibre};
+`
+const StyledTextDiv = styled.div`
+  // width: 200px;
+  // margin-left: 200px;
+  // margin-botton: 200px;
+`
+
 const ChatbotArea = () => {
   return (
     <StyledContainer id="Chatbot">
-      <StyledTitle>Chat with Foodbot</StyledTitle>
-      <StyledSubtitle>
-        Let me suggest you a place to eat in Auckland. Have a craving for a
-        certain cuisine? let me find a place for you...
-      </StyledSubtitle>
+      {/* <StyledTitle>Chat with Foodbot</StyledTitle> */}
+      <StyledTextDiv>
+      <StyledSubtitle>Chat with Foodbot</StyledSubtitle>
+      <StyledDiv dangerouslySetInnerHTML={{ __html: "Placeholder put something here to make look more filled." }} />
+      </StyledTextDiv>
       <StyledChat>
-      <Chatbot className = "test"
+      <Chatbot
         config={config}
         actionProvider={ActionProvider}
         messageHistory={loadMessages()}

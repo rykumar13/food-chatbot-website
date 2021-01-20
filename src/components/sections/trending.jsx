@@ -11,7 +11,7 @@ const StyledContainer = styled(Section)`
   ${mixins.flexCenter};
   flex-direction: column;
   align-items: flex-center;
-  min-height: 90vh;
+  min-height: 100vh;
   @media (max-width: 48em) {
     padding-top: 00px;
   }
@@ -61,7 +61,7 @@ const Trending = () => {
   
     return (
       <StyledContainer id="trending">
-        <StyledSubtitle>Trending in Auckland this week</StyledSubtitle>
+        <StyledTitle>Trending in Auckland</StyledTitle>
       </StyledContainer>
     )
   }
