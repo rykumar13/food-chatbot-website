@@ -8,7 +8,7 @@ const { colors, fonts, fontSizes } = theme
 
 const StyledContainer = styled.div`
 box-shadow: -10px 0px 30px -15px ${colors.navy_text};
-background-color: ${colors.bg_greyGreen};
+//background-color: ${colors.bg_greyGreen};
   display: flex;
   justify-content: space-around;
   align-items: center;

@@ -26,11 +26,6 @@ const StyledTitle = styled.h4`
   }
 `
 
-const StyledEmailLink = styled.a`
-  ${mixins.bigButton};
-  margin-top: 50px;
-`
-
 const StyledDiv = styled.div`
   font-family: ${fonts.Calibre};
 `

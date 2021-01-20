@@ -14,29 +14,6 @@ const StyledContainer = styled.footer`
   min-height: 70px;
 `;
 
-const StyledSocial = styled.div`
-  color: ${colors.cream_text};
-  width: 100%;
-  max-width: 270px;
-  margin: 0 auto 10px;
-  display: none;
-`;
-
-const StyledSocialList = styled.ul`
-  ${mixins.flexBetween};
-  padding: 0;
-  margin: 0;
-  list-style: none;
-`;
-
-const StyledSocialLink = styled.a`
-  padding: 10px;
-  svg {
-    width: 20px;
-    height: 20px;
-  }
-`;
-
 const StyledMetadata = styled.div`
   font-family: ${fonts.SFMono};
   font-size: ${fontSizes.xs};

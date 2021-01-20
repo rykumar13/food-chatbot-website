@@ -3,15 +3,23 @@ import styled from "styled-components"
 import theme from "../../styles/theme"
 import Section from "../../styles/Section"
 import mixins from "../../styles/mixins"
+import bg from "../../images/landing.jpg"
 
-const { colors, fonts, fontSizes } = theme
+const { colors } = theme
 
 const StyledContainer = styled(Section)`
-  padding: 60px 0;
+  background-image: url(${bg});
+  background-position: center;
+  background-size: cover;
+  max-width:100%;
+  // max-height:100%;
+  object-fit: fill;
+  padding: 60px 0px;
   ${mixins.flexCenter};
   flex-direction: column;
   align-items: flex-center;
   min-height: 90vh;
+  height: 250px;
   @media (max-width: 48em) {
     padding-top: 00px;
   }
@@ -20,7 +28,7 @@ const StyledContainer = styled(Section)`
   }
 `
 const StyledTitle = styled.h2`
-  color: ${colors.cream_text};
+  color: ${colors.white};
   font-size: 80px;
   line-height: 1.1;
   margin: 0;
@@ -39,7 +47,7 @@ const StyledTitle = styled.h2`
 `
 
 const StyledSubtitle = styled.h3`
-  color: ${colors.cream_text};
+  color: ${colors.white};
   font-size: 30px;
   font-weight: normal;
   line-height: 1.1;
