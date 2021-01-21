@@ -11,8 +11,8 @@ const StyledContainer = styled(Section)`
   background-image: url(${bg});
   background-position: center;
   background-size: cover;
-  max-width: 100%;
   object-fit: fill;
+  max-width: 100%;
   padding: 60px 0px;
   ${mixins.flexCenter};
   flex-direction: column;

@@ -3,10 +3,15 @@ import styled from "styled-components"
 import theme from "../../styles/theme"
 import Section from "../../styles/Section"
 import mixins from "../../styles/mixins"
+import bg from "../../images/landing8.jpg";
 
 const { colors, fonts, fontSizes } = theme
 
 const StyledContainer = styled(Section)`
+  background-image: url(${bg});
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
   padding: 60px 0;
   ${mixins.flexCenter};
   flex-direction: column;
@@ -20,7 +25,8 @@ const StyledContainer = styled(Section)`
   }
 `
 const StyledTitle = styled.h2`
-  color: ${colors.cream_text};
+  // color: ${colors.cream_text};
+  height: 600px;
   font-size: 80px;
   line-height: 1.1;
   margin: 0;

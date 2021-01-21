@@ -10,7 +10,7 @@ import ActionProvider from "../../chatbot/ActionProvider";
 import config from "../../chatbot/config";
 import MessageParser from "../../chatbot/MessageParser";
 
-import bg from "../../images/landing1.jpg";
+import bg from "../../images/landing3.jpg";
 
 const { colors, fonts, fontSizes } = theme;
 
@@ -20,7 +20,7 @@ const StyledContainer = styled(Section)`
   background-position: center;
   background-size: cover;
   max-width: 100%;
-  // max-height:100%;
+  /// max-height:100%;
   object-fit: fill;
   padding: 60px 0;
   ${mixins.flexCenter};
@@ -33,11 +33,6 @@ const StyledContainer = styled(Section)`
   div {
     width: 100%;
   }
-`;
-
-const StyledChat = styled.div`
-max-width: 20%;
-// margin-right: 400px;
 `;
 
 const StyledTitle = styled.h2`
@@ -61,9 +56,29 @@ const StyledTitle = styled.h2`
 
 const StyledSubtitle = styled.h3`
   // color: ${colors.white};
-  font-size: 50px;
-  font-weight: normal;
-  line-height: 1.1;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.6;
+  @media (max-width: 63em) {
+    font-size: 25px;
+  }
+  @media (max-width: 48em) {
+    font-size: 20px;
+  }
+  @media (max-width: 30em) {
+    font-size: 15px;
+  }
+  @media (max-width: 24em) {
+    font-size: 10px;
+  }
+`;
+
+const StyledSubtitle2 = styled.h3`
+  // color: ${colors.white};
+  height: 0px;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.6;
   @media (max-width: 63em) {
     font-size: 25px;
   }
@@ -93,20 +108,52 @@ const loadMessages = () => {
 
 const StyledDiv = styled.div`
   font-family: ${fonts.Calibre};
+  text-align: left;
+  font-weight: 490;
+  line-height: 1.7;
+  margin-left: 120px;
+  font-size: 18px;
+  // background: ${colors.cream_text};
 `
 const StyledTextDiv = styled.div`
-  // width: 200px;
-  // margin-left: 200px;
-  // margin-botton: 200px;
+  // max-width: 350px;
+  height: 450px;
+  margin-left: 150px;
+`
+
+const StyledChat = styled.div`
+max-width: 20%;
+margin-right: 400px;
+`;
+
+const MainArea = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 
 const ChatbotArea = () => {
   return (
     <StyledContainer id="Chatbot">
-      {/* <StyledTitle>Chat with Foodbot</StyledTitle> */}
+      <MainArea>
       <StyledTextDiv>
-      <StyledSubtitle>Chat with Foodbot</StyledSubtitle>
-      <StyledDiv dangerouslySetInnerHTML={{ __html: "Placeholder put something here to make look more filled." }} />
+      <StyledSubtitle>Things I can do...</StyledSubtitle>
+      {/* <StyledDiv dangerouslySetInnerHTML={{ __html: "<ul><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li></ul>" }} /> */}
+      <StyledDiv>
+        <ul>
+          <li>Suggest a restuarant based on cuisine type</li>
+          <li>Suggest based on delivery, takeaway or dine-out option</li>
+          <li>Tell you information about opening and contact hours</li>
+          <li>Bring you the menu for selected restaurant</li>
+        </ul>
+      </StyledDiv>
+      <br></br><br></br><br></br>
+      <StyledSubtitle>Still cant decide?</StyledSubtitle>
+      <div>
+        <StyledEmailLink href={`mailto:rykumar13@gmail.com`}>
+          See Trending
+        </StyledEmailLink>
+      </div>
       </StyledTextDiv>
       <StyledChat>
       <Chatbot
@@ -117,6 +164,7 @@ const ChatbotArea = () => {
         saveMessages={saveMessages}
       />
       </StyledChat>
+      </MainArea>
     </StyledContainer>
   );
 };

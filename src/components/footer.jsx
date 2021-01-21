@@ -7,11 +7,12 @@ const { colors, fontSizes, fonts } = theme;
 
 const StyledContainer = styled.footer`
   ${mixins.flexCenter};
+  background: black;
   flex-direction: column;
-  padding: 15px;
+  padding: 0px;
   text-align: center;
   height: auto;
-  min-height: 70px;
+  min-height: 0px;
 `;
 
 const StyledMetadata = styled.div`
