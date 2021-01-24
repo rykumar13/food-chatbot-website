@@ -21,3 +21,19 @@ export const getRestaurants = async (
   console.log(data);
   return data["restaurants"];
 };
+
+export const getTrending = async () => {
+   let data = await fetch(
+     `${baseURL}search?collection_id=1&entity_id=70`,
+     {
+       method: "GET",
+       headers: {
+         Accept: "application/json",
+         "user-key": "443cebb0c149559671b6093778226894",
+       },
+     }
+   );
+   data = await data.json();
+  console.log(data);
+  return data["restaurants"];
+};

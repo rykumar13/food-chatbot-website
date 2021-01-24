@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import "./Restaurant1.css";
 
 import { getRestaurants } from "../../../chatbot/data/data";
-//import { getRestaurants } from "../../../chatbot/data/mock_response";
 
 const Restaurant1 = ({ cuisineType, categoryType, latitude, longitude }) => {
   const [currentRestaurant, setCurrentRestaurant] = useState(null);

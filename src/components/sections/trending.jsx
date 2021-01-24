@@ -1,9 +1,10 @@
-import React from "react";
+import {React, useState, useEffect} from "react";
 import styled from "styled-components";
 import theme from "../../styles/theme";
 import Section from "../../styles/Section";
 import mixins from "../../styles/mixins";
 import bg from "../../images/landing8.jpg";
+import { getTrending } from "../../chatbot/data/data";
 
 const { colors, fonts, fontSizes } = theme;
 
@@ -82,17 +83,29 @@ const StyledBox = styled.div`
   font-size: 150%;
 `;
 
+
 const Trending = () => {
+  const [currentTrending, setTrending] = useState(null)
+
+  useEffect(() => {
+    const getTrendingList = async () => {
+      let trendingList = await getTrending();
+      if (trendingList) return setTrending(trendingList);
+      setTrending("no trending found.");
+  };
+  getTrendingList(); 
+}, []);
+  
   return (
     <StyledContainer id="trending">
       <StyledTitle>Trending in Auckland</StyledTitle>
       <StyledWrapper>
-        <StyledBox>A</StyledBox>
-        <StyledBox>b</StyledBox>
-        <StyledBox>c</StyledBox>
-        <StyledBox>d</StyledBox>
-        <StyledBox>e</StyledBox>
-        <StyledBox>f</StyledBox>
+        <StyledBox>{currentTrending[0]["restaurant"]["name"]}</StyledBox>
+        <StyledBox>{currentTrending[1]["restaurant"]["name"]}</StyledBox>
+        <StyledBox>{currentTrending[2]["restaurant"]["name"]}</StyledBox>
+        <StyledBox>{currentTrending[3]["restaurant"]["name"]}</StyledBox>
+        <StyledBox>{currentTrending[4]["restaurant"]["name"]}</StyledBox>
+        <StyledBox>{currentTrending[5]["restaurant"]["name"]}</StyledBox>
       </StyledWrapper>
     </StyledContainer>
   );
