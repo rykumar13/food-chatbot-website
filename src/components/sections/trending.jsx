@@ -1,4 +1,4 @@
-import {React, useState, useEffect} from "react";
+import { React, useState, useEffect } from "react";
 import styled from "styled-components";
 import theme from "../../styles/theme";
 import Section from "../../styles/Section";
@@ -83,29 +83,29 @@ const StyledBox = styled.div`
   font-size: 150%;
 `;
 
-
 const Trending = () => {
-  const [currentTrending, setTrending] = useState(null)
+  const [currentTrending, setCurrentTrending] = useState(null);
 
   useEffect(() => {
     const getTrendingList = async () => {
       let trendingList = await getTrending();
-      if (trendingList) return setTrending(trendingList);
-      setTrending("no trending found.");
-  };
-  getTrendingList(); 
-}, []);
-  
+      if (trendingList) return setCurrentTrending(trendingList);
+      setCurrentTrending("no trending found");
+    };
+    getTrendingList();
+  }, []);
+
+  if (!currentTrending) return null;
   return (
     <StyledContainer id="trending">
       <StyledTitle>Trending in Auckland</StyledTitle>
       <StyledWrapper>
-        <StyledBox>{currentTrending[0]["restaurant"]["name"]}</StyledBox>
-        <StyledBox>{currentTrending[1]["restaurant"]["name"]}</StyledBox>
-        <StyledBox>{currentTrending[2]["restaurant"]["name"]}</StyledBox>
-        <StyledBox>{currentTrending[3]["restaurant"]["name"]}</StyledBox>
-        <StyledBox>{currentTrending[4]["restaurant"]["name"]}</StyledBox>
-        <StyledBox>{currentTrending[5]["restaurant"]["name"]}</StyledBox>
+        <StyledBox><img src ={currentTrending[0]["restaurant"]["featured_image"]} alt="test"></img></StyledBox>
+        <StyledBox><img src ={currentTrending[1]["restaurant"]["featured_image"]} alt="test"></img></StyledBox>
+        <StyledBox><img src ={currentTrending[2]["restaurant"]["featured_image"]} alt="test"></img></StyledBox>
+        <StyledBox><img src ={currentTrending[3]["restaurant"]["featured_image"]} alt="test"></img></StyledBox>
+        <StyledBox><img src ={currentTrending[4]["restaurant"]["featured_image"]} alt="test"></img></StyledBox>
+        <StyledBox><img src ={currentTrending[5]["restaurant"]["featured_image"]} alt="test"></img></StyledBox>
       </StyledWrapper>
     </StyledContainer>
   );
