@@ -71,17 +71,56 @@ const StyledWrapper = styled.div`
   display: grid;
   grid-template-columns: 250px 250px 250px;
   grid-gap: 30px;
-  /* background-color: #fff; */
-  color: #444;
 `;
 
 const StyledBox = styled.div`
-  background-color: #444;
-  color: #fff;
   border-radius: 5px;
-  padding: 20px;
-  font-size: 150%;
+  font-size: 100%;
+  line-height: 1.1;
 `;
+
+const StyledImg = styled.img`
+  height: 185px;
+  width: 260px;
+  border-radius: 0.6rem;
+`;
+
+const StyledRestaurantName = styled.h5`
+  text-decoration: none;
+  white-space: nowrap;
+  display: inline;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: rgb(28, 28, 28);
+  font-weight: 500;
+`
+const StyledRestaurantLocality = styled.h6`
+  text-decoration: none;
+  white-space: nowrap;
+  display: inline;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: rgb(79, 79, 79);
+  font-weight: 400;
+`
+const StyledRestaurantCategory = styled.h6`
+  text-decoration: none;
+  white-space: nowrap;
+  display: inline;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: rgb(79, 79, 79);
+  font-weight: 400;
+`
+const StyledRestaurantRating = styled.h6`
+  text-decoration: none;
+  white-space: nowrap;
+  display: inline;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: rgb(79, 79, 79);
+  font-weight: 400;
+`
 
 const Trending = () => {
   const [currentTrending, setCurrentTrending] = useState(null);
@@ -100,12 +139,66 @@ const Trending = () => {
     <StyledContainer id="trending">
       <StyledTitle>Trending in Auckland</StyledTitle>
       <StyledWrapper>
-        <StyledBox><img src ={currentTrending[0]["restaurant"]["featured_image"]} alt="test"></img></StyledBox>
-        <StyledBox><img src ={currentTrending[1]["restaurant"]["featured_image"]} alt="test"></img></StyledBox>
-        <StyledBox><img src ={currentTrending[2]["restaurant"]["featured_image"]} alt="test"></img></StyledBox>
-        <StyledBox><img src ={currentTrending[3]["restaurant"]["featured_image"]} alt="test"></img></StyledBox>
-        <StyledBox><img src ={currentTrending[4]["restaurant"]["featured_image"]} alt="test"></img></StyledBox>
-        <StyledBox><img src ={currentTrending[5]["restaurant"]["featured_image"]} alt="test"></img></StyledBox>
+        <StyledBox>
+          <StyledImg alt="test" src={currentTrending[0]["restaurant"]["thumb"]} />
+          <StyledRestaurantName>{currentTrending[0]["restaurant"]["name"]}</StyledRestaurantName>
+          <br></br>
+          <StyledRestaurantRating>Rating: {currentTrending[0]["restaurant"]["user_rating"]["aggregate_rating"]} ({currentTrending[0]["restaurant"]["user_rating"]["votes"]})</StyledRestaurantRating>
+          <br></br>
+          <StyledRestaurantLocality>{currentTrending[0]["restaurant"]["location"]["locality"]}</StyledRestaurantLocality>
+          <br></br>
+          <StyledRestaurantCategory>{currentTrending[0]["restaurant"]["cuisines"]}</StyledRestaurantCategory>
+        </StyledBox>
+        <StyledBox>
+          <StyledImg alt="test" src={currentTrending[1]["restaurant"]["thumb"]} />
+          <StyledRestaurantName>{currentTrending[1]["restaurant"]["name"]}</StyledRestaurantName>
+          <br></br>
+          <StyledRestaurantRating>Rating: {currentTrending[1]["restaurant"]["user_rating"]["aggregate_rating"]} ({currentTrending[1]["restaurant"]["user_rating"]["votes"]})</StyledRestaurantRating>
+          <br></br>
+          <StyledRestaurantLocality>{currentTrending[1]["restaurant"]["location"]["locality"]}</StyledRestaurantLocality>
+          <br></br>
+          <StyledRestaurantCategory>{currentTrending[1]["restaurant"]["cuisines"]}</StyledRestaurantCategory>
+        </StyledBox>
+        <StyledBox>
+          <StyledImg alt="test" src={currentTrending[2]["restaurant"]["thumb"]} />
+          <StyledRestaurantName>{currentTrending[2]["restaurant"]["name"]}</StyledRestaurantName>
+          <br></br>
+          <StyledRestaurantRating>Rating: {currentTrending[2]["restaurant"]["user_rating"]["aggregate_rating"]} ({currentTrending[2]["restaurant"]["user_rating"]["votes"]})</StyledRestaurantRating>
+          <br></br>
+          <StyledRestaurantLocality>{currentTrending[2]["restaurant"]["location"]["locality"]}</StyledRestaurantLocality>
+          <br></br>
+          <StyledRestaurantCategory>{currentTrending[2]["restaurant"]["cuisines"]}</StyledRestaurantCategory>
+        </StyledBox>
+        <StyledBox>
+          <StyledImg alt="test" src={currentTrending[3]["restaurant"]["thumb"]} />
+          <StyledRestaurantName>{currentTrending[3]["restaurant"]["name"]}</StyledRestaurantName>
+          <br></br>
+          <StyledRestaurantRating>Rating: {currentTrending[3]["restaurant"]["user_rating"]["aggregate_rating"]} ({currentTrending[3]["restaurant"]["user_rating"]["votes"]})</StyledRestaurantRating>
+          <br></br>
+          <StyledRestaurantLocality>{currentTrending[3]["restaurant"]["location"]["locality"]}</StyledRestaurantLocality>
+          <br></br>
+          <StyledRestaurantCategory>{currentTrending[3]["restaurant"]["cuisines"]}</StyledRestaurantCategory>
+        </StyledBox>
+        <StyledBox>
+          <StyledImg alt="test" src={currentTrending[4]["restaurant"]["thumb"]} />
+          <StyledRestaurantName>{currentTrending[4]["restaurant"]["name"]}</StyledRestaurantName>
+          <br></br>
+          <StyledRestaurantRating>Rating: {currentTrending[4]["restaurant"]["user_rating"]["aggregate_rating"]} ({currentTrending[4]["restaurant"]["user_rating"]["votes"]})</StyledRestaurantRating>
+          <br></br>
+          <StyledRestaurantLocality>{currentTrending[4]["restaurant"]["location"]["locality"]}</StyledRestaurantLocality>
+          <br></br>
+          <StyledRestaurantCategory>{currentTrending[4]["restaurant"]["cuisines"]}</StyledRestaurantCategory>
+        </StyledBox>
+        <StyledBox>
+          <StyledImg alt="test" src={currentTrending[5]["restaurant"]["thumb"]} />
+          <StyledRestaurantName>{currentTrending[5]["restaurant"]["name"]}</StyledRestaurantName>
+          <br></br>
+          <StyledRestaurantRating>Rating: {currentTrending[5]["restaurant"]["user_rating"]["aggregate_rating"]} ({currentTrending[5]["restaurant"]["user_rating"]["votes"]})</StyledRestaurantRating>
+          <br></br>
+          <StyledRestaurantLocality>{currentTrending[5]["restaurant"]["location"]["locality"]}</StyledRestaurantLocality>
+          <br></br>
+          <StyledRestaurantCategory>{currentTrending[5]["restaurant"]["cuisines"]}</StyledRestaurantCategory>
+        </StyledBox>
       </StyledWrapper>
     </StyledContainer>
   );
