@@ -9,25 +9,19 @@ import { getTrending } from "../../chatbot/data/data";
 const { colors, fonts, fontSizes } = theme;
 
 const StyledContainer = styled(Section)`
-  background-image: url(${bg});
-  background-position: center;
-  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   max-width: 100%;
   padding: 60px 0;
-  ${mixins.flexCenter};
-  flex-direction: column;
-  align-items: flex-center;
-  min-height: 100vh;
+  align-items: center;
   @media (max-width: 48em) {
     padding-top: 00px;
   }
-  // div {
-  //   width: 100%;
-  // }
 `;
 const StyledTitle = styled.h2`
   // color: ${colors.cream_text};
-  height: 600px;
+  height: 150px;
   font-size: 80px;
   line-height: 1.1;
   margin: 0;
@@ -65,9 +59,9 @@ const StyledSubtitle = styled.h3`
 `;
 
 const StyledWrapper = styled.div`
-  position: absolute; /* or absolute */
+  //position: absolute; /* or absolute */
   margin: auto:
-  height: auto;
+  height: 350px;
   display: grid;
   grid-template-columns: 250px 250px 250px;
   grid-gap: 30px;
@@ -85,20 +79,20 @@ const StyledImg = styled.img`
   border-radius: 0.6rem;
 `;
 
-const StyledRestaurantName = styled.h5`
+const StyledRestaurantName = styled.h6`
   text-decoration: none;
   white-space: nowrap;
   display: inline;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   line-height: 1.5;
   color: rgb(28, 28, 28);
-  font-weight: 500;
+  font-weight: 600;
 `
 const StyledRestaurantLocality = styled.h6`
   text-decoration: none;
   white-space: nowrap;
   display: inline;
-  font-size: 1.4rem;
+  // font-size: 1.4rem;
   line-height: 1.5;
   color: rgb(79, 79, 79);
   font-weight: 400;
@@ -107,7 +101,7 @@ const StyledRestaurantCategory = styled.h6`
   text-decoration: none;
   white-space: nowrap;
   display: inline;
-  font-size: 1.4rem;
+  // font-size: 1.4rem;
   line-height: 1.5;
   color: rgb(79, 79, 79);
   font-weight: 400;
@@ -116,7 +110,7 @@ const StyledRestaurantRating = styled.h6`
   text-decoration: none;
   white-space: nowrap;
   display: inline;
-  font-size: 1.4rem;
+  // font-size: 1.4rem;
   line-height: 1.5;
   color: rgb(79, 79, 79);
   font-weight: 400;

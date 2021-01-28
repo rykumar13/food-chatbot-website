@@ -8,9 +8,9 @@ import bg from "../../images/landing1.jpg";
 const { colors, fontSizes, fonts } = theme;
 
 const StyledContainer = styled(Section)`
-  background-image: url(${bg});
-  background-position: center;
-  background-size: cover;
+  // background-image: url(${bg});
+  // background-position: center;
+  // background-size: cover;
   object-fit: fill;
   max-width: 100%;
   padding: 60px 0px;
@@ -64,9 +64,14 @@ const StyledSubtitle = styled.h3`
   }
 `;
 
-const StyledEmailLink = styled.a`
+const StyledGetStarted = styled.a`
   ${mixins.bigButton};
   margin-top: 20px;
+`;
+
+const StyledGetStartedContainer = styled.div`
+  display: flex;
+  justify-content: center;
 `;
 
 const Landing = () => {
@@ -77,11 +82,11 @@ const Landing = () => {
         A chatbot to help you discover where to eat in Auckland.
       </StyledSubtitle>
       <StyledSubtitle>Powered by Zomato.</StyledSubtitle>
-      <div>
-        <StyledEmailLink href={`mailto:rykumar13@gmail.com`}>
+      <StyledGetStartedContainer>
+        <StyledGetStarted href={`mailto:rykumar13@gmail.com`}>
           Get Started
-        </StyledEmailLink>
-      </div>
+        </StyledGetStarted>
+      </StyledGetStartedContainer>
     </StyledContainer>
   );
 };

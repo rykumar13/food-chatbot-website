@@ -16,9 +16,9 @@ const { colors, fonts, fontSizes } = theme;
 
 const StyledContainer = styled(Section)`
   // color: ${colors.cream_text};
-  background-image: url(${bg});
-  background-position: center;
-  background-size: cover;
+  // background-image: url(${bg});
+  // background-position: center;
+  // background-size: cover;
   max-width: 100%;
   /// max-height:100%;
   object-fit: fill;

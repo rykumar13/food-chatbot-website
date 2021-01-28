@@ -7,24 +7,25 @@ import bg from "../../images/landing4.jpg";
 const { fontSizes, fonts, colors } = theme
 
 const StyledContainer = styled(Section)`
-  background-image: url(${bg});
-  background-position: center;
-  background-size: cover;
+  // background-image: url(${bg});
+  // background-position: center;
+  // background-size: cover;
   max-width: 100%;
+  ${mixins.flexCenter};
+  flex-direction: column;
   object-fit: fill;
   min-height: 100vh;
-  // color: ${colors.cream_text};
   text-align: center;
-  // max-width: 600px;
-  // margin: 0 auto 100px;
+
   a {
     ${mixins.inlineLink};
   }
 `
 
 const StyledTitle = styled.h4`
-  margin: 0px 0px 20px;
-  font-size: 60px;
+  font-size: 80px;
+  line-height: 1.1;
+  margin: 0;
   @media (max-width: 63em) {
     font-size: 50px;
   }

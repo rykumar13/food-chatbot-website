@@ -90,13 +90,6 @@ const GlobalStyle = createGlobalStyle`
     filter: blur(5px);
   }
 
-  svg {
-    width: 100%;
-    height: 100%;
-    fill: currentColor;
-    vertical-align: middle;
-  }
-
   a {
     display: inline-block;
     text-decoration: none;
@@ -241,10 +234,6 @@ const GlobalStyle = createGlobalStyle`
       text-transform: uppercase;
       letter-spacing: 0.1em;
     }
-  }
-
-  .gatsby-image-outer-wrapper {
-    height: 100%;
   }
 
 `
