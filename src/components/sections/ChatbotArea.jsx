@@ -19,13 +19,11 @@ const StyledContainer = styled(Section)`
   // background-image: url(${bg});
   // background-position: center;
   // background-size: cover;
+  ${mixins.flexCenter};
   max-width: 100%;
   /// max-height:100%;
   object-fit: fill;
   padding: 60px 0;
-  ${mixins.flexCenter};
-  flex-direction: column;
-  align-items: flex-center;
   min-height: 100vh;
   @media (max-width: 48em) {
     padding-top: 00px;
@@ -106,55 +104,38 @@ const loadMessages = () => {
   return messages;
 };
 
-const StyledDiv = styled.div`
+const StyledTextBlob = styled.div`
   font-family: ${fonts.Calibre};
-  text-align: left;
+  // text-align: left;
   font-weight: 490;
   line-height: 1.7;
-  margin-left: 120px;
+  margin-left: 50px;
   font-size: 18px;
   // background: ${colors.cream_text};
 `
 const StyledTextDiv = styled.div`
   // max-width: 350px;
-  height: 450px;
-  margin-left: 150px;
+  // height: 450px;
 `
 
 const StyledChat = styled.div`
 max-width: 20%;
-margin-right: 400px;
+// margin-right: 400px;
+
 `;
 
 const MainArea = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+
 `
 
 const ChatbotArea = () => {
   return (
     <StyledContainer id="Chatbot">
       <MainArea>
-      <StyledTextDiv>
-      <StyledSubtitle>Things I can do...</StyledSubtitle>
-      {/* <StyledDiv dangerouslySetInnerHTML={{ __html: "<ul><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li></ul>" }} /> */}
-      <StyledDiv>
-        <ul>
-          <li>Suggest a restuarant based on cuisine type</li>
-          <li>Suggest based on delivery, takeaway or dine-out option</li>
-          <li>Tell you information about opening and contact hours</li>
-          <li>Bring you the menu for selected restaurant</li>
-        </ul>
-      </StyledDiv>
-      <br></br><br></br><br></br>
-      <StyledSubtitle>Still cant decide?</StyledSubtitle>
-      <div>
-        <StyledEmailLink href={`mailto:rykumar13@gmail.com`}>
-          See Trending
-        </StyledEmailLink>
-      </div>
-      </StyledTextDiv>
       <StyledChat>
       <Chatbot
         config={config}
@@ -164,6 +145,25 @@ const ChatbotArea = () => {
         saveMessages={saveMessages}
       />
       </StyledChat>
+      <StyledTextDiv>
+      <StyledSubtitle>Things I can do...</StyledSubtitle>
+      {/* <StyledDiv dangerouslySetInnerHTML={{ __html: "<ul><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li></ul>" }} /> */}
+      <StyledTextBlob>
+        <ul>
+          <li>Suggest a restuarant based on cuisine type</li>
+          <li>Suggest based on delivery, takeaway or dine-out option</li>
+          <li>Tell you information about opening and contact hours</li>
+          <li>Bring you the menu for selected restaurant</li>
+        </ul>
+      </StyledTextBlob>
+      <br></br><br></br><br></br>
+      <StyledSubtitle>Still cant decide?</StyledSubtitle>
+      <div>
+        <StyledEmailLink href={`mailto:rykumar13@gmail.com`}>
+          See Trending
+        </StyledEmailLink>
+      </div>
+      </StyledTextDiv>
       </MainArea>
     </StyledContainer>
   );
