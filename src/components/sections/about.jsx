@@ -23,7 +23,7 @@ const StyledContainer = styled(Section)`
 `
 
 const StyledTitle = styled.h4`
-  font-size: 80px;
+  font-size: 50px;
   line-height: 1.1;
   margin: 0;
   @media (max-width: 63em) {
@@ -37,13 +37,23 @@ const StyledTitle = styled.h4`
 const StyledDiv = styled.div`
   font-family: ${fonts.Calibre};
 `
+const StyledSourceCode = styled.a`
+  ${mixins.smallButton};
+  margin-top: 20px;
+`;
+
 
 const About = () => {
 
   return (
     <StyledContainer id="about">
       <StyledTitle>About FoodBot</StyledTitle>
-      <StyledDiv dangerouslySetInnerHTML={{ __html: "Placeholder about how I was built" }} />
+      <div>
+          <div>Made using, react, React-chatbot-kit library, Zomato api</div>
+          <StyledSourceCode href={`https://github.com/rykumar13/react-food-chatbot-website`}>
+          Source
+        </StyledSourceCode>
+      </div>
     </StyledContainer>
   )
 }

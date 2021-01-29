@@ -8,7 +8,7 @@ const Button = styled.button`
   border: 1px solid ${colors.green};
   border-radius: ${theme.borderRadius};
   font-size: ${fontSizes.smish};
-  font-family: ${fonts.SFMono};
+  font-family: 'Titillium Web', sans-serif
   line-height: 1;
   text-decoration: none;
   cursor: pointer;

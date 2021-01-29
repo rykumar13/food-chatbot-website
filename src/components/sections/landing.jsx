@@ -5,13 +5,15 @@ import Section from "../../styles/Section";
 import mixins from "../../styles/mixins";
 import bg from "../../images/landing1.jpg";
 
+import { Link } from "react-scroll";
+
 const { colors, fontSizes, fonts } = theme;
 
 const StyledContainer = styled(Section)`
   // background-image: url(${bg});
-  // background-position: center;
+  // background-position: 50px 50px;
   // background-size: cover;
-  object-fit: fill;
+  // object-fit: fill;
   max-width: 100%;
   padding: 60px 0px;
   ${mixins.flexCenter};
@@ -65,7 +67,7 @@ const StyledSubtitle = styled.h3`
 `;
 
 const StyledGetStarted = styled.a`
-  ${mixins.bigButton};
+  ${mixins.smallButton};
   margin-top: 20px;
 `;
 
@@ -83,9 +85,16 @@ const Landing = () => {
       </StyledSubtitle>
       <StyledSubtitle>Powered by Zomato.</StyledSubtitle>
       <StyledGetStartedContainer>
-        <StyledGetStarted href={`mailto:rykumar13@gmail.com`}>
-          Get Started
-        </StyledGetStarted>
+        
+          <Link
+                    activeClass="active"
+                    to="Chatbot"
+                    spy={true}
+                    smooth={true}
+                    duration={700}
+                  >
+                    <StyledGetStarted href={``}>Get Started</StyledGetStarted>
+                    </Link>
       </StyledGetStartedContainer>
     </StyledContainer>
   );

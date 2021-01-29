@@ -3,11 +3,12 @@ import styled from "styled-components"
 import theme from "../styles/theme"
 import { navLinks } from "../config"
 import mixins from "../styles/mixins"
+import { Link } from "react-scroll";
 const { colors, fonts, fontSizes } = theme
 
 const StyledContainer = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   // align-items: center;
   height: 0px;
   @media (max-width: 63em) {
@@ -29,9 +30,9 @@ const NavListItem = styled.li`
   position: relative;
 `
 const MenuLink = styled.a`
-  font-family: ${fonts.Calibre};
+  font-family: 'Titillium Web', sans-serif
   font-size: ${fontSizes.lg};
-  font-weight: 650;
+  font-weight: 500;
 `
 
 const Header = () => {
@@ -41,7 +42,15 @@ const Header = () => {
             {navLinks.map(({ url, name }) => (
               <NavListItem>
                 <MenuLink>
-                    {name}
+                <Link
+                activeClass="active"
+                to={url}
+                spy={true}
+                smooth={true}
+                duration={700}
+              >
+                {name}
+              </Link>
                 </MenuLink>
               </NavListItem>
             ))}

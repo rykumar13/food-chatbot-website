@@ -43,6 +43,14 @@ import NextRestartBtns5 from "../components/Options/NextRestartBtns/NextRestartB
 
 const config = {
   botName: "FoodBot",
+  customStyles: {
+    botMessageBox: {
+      backgroundColor: "#376B7E",
+    },
+    chatButton: {
+      backgroundColor: "#5ccc9d",
+    },
+  },
   initialMessages: [
     createChatBotMessage(
       `Hello! my name is FoodBot, here to help you find a place to eat.`,

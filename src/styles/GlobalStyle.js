@@ -25,6 +25,7 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     line-height: 1.3;
+    font-family: 'Titillium Web', sans-serif
     @media(max-width: 30em) {
       font-size: ${fontSizes.lg};
     }

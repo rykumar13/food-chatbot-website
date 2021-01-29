@@ -12,6 +12,8 @@ import MessageParser from "../../chatbot/MessageParser";
 
 import bg from "../../images/landing3.jpg";
 
+import { Link } from "react-scroll";
+
 const { colors, fonts, fontSizes } = theme;
 
 const StyledContainer = styled(Section)`
@@ -19,7 +21,9 @@ const StyledContainer = styled(Section)`
   // background-image: url(${bg});
   // background-position: center;
   // background-size: cover;
-  ${mixins.flexCenter};
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 100%;
   /// max-height:100%;
   object-fit: fill;
@@ -54,7 +58,7 @@ const StyledTitle = styled.h2`
 
 const StyledSubtitle = styled.h3`
   // color: ${colors.white};
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 600;
   line-height: 1.6;
   @media (max-width: 63em) {
@@ -92,8 +96,8 @@ const StyledSubtitle2 = styled.h3`
 `;
 
 const StyledEmailLink = styled.a`
-  ${mixins.bigButton};
-  margin-top: 20px;
+  ${mixins.smallButton};
+  //margin-top: 20px;
 `;
 const saveMessages = (messages) => {
   localStorage.setItem("chat_messages", JSON.stringify(messages));
@@ -105,65 +109,75 @@ const loadMessages = () => {
 };
 
 const StyledTextBlob = styled.div`
-  font-family: ${fonts.Calibre};
+  font-family: 'Titillium Web', sans-serif
   // text-align: left;
   font-weight: 490;
   line-height: 1.7;
   margin-left: 50px;
   font-size: 18px;
   // background: ${colors.cream_text};
-`
+`;
 const StyledTextDiv = styled.div`
   // max-width: 350px;
   // height: 450px;
-`
+  margin-top: -120px;
+  margin-left: 150px;
+`;
 
 const StyledChat = styled.div`
-max-width: 20%;
-// margin-right: 400px;
-
+  max-width: 25%;
+  // margin-right: 300px;
 `;
 
 const MainArea = styled.div`
-display: flex;
-justify-content: center;
-flex-direction: column;
-align-items: center;
-
-`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 350px;
+`;
 
 const ChatbotArea = () => {
   return (
     <StyledContainer id="Chatbot">
       <MainArea>
-      <StyledChat>
-      <Chatbot
-        config={config}
-        actionProvider={ActionProvider}
-        messageHistory={loadMessages()}
-        messageParser={MessageParser}
-        saveMessages={saveMessages}
-      />
-      </StyledChat>
-      <StyledTextDiv>
-      <StyledSubtitle>Things I can do...</StyledSubtitle>
-      {/* <StyledDiv dangerouslySetInnerHTML={{ __html: "<ul><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li></ul>" }} /> */}
-      <StyledTextBlob>
-        <ul>
-          <li>Suggest a restuarant based on cuisine type</li>
-          <li>Suggest based on delivery, takeaway or dine-out option</li>
-          <li>Tell you information about opening and contact hours</li>
-          <li>Bring you the menu for selected restaurant</li>
-        </ul>
-      </StyledTextBlob>
-      <br></br><br></br><br></br>
-      <StyledSubtitle>Still cant decide?</StyledSubtitle>
-      <div>
-        <StyledEmailLink href={`mailto:rykumar13@gmail.com`}>
-          See Trending
-        </StyledEmailLink>
-      </div>
-      </StyledTextDiv>
+        <StyledChat>
+          <Chatbot
+            config={config}
+            actionProvider={ActionProvider}
+            messageHistory={loadMessages()}
+            messageParser={MessageParser}
+            saveMessages={saveMessages}
+          />
+        </StyledChat>
+        <StyledTextDiv>
+          <StyledSubtitle>Things I can do...</StyledSubtitle>
+          {/* <StyledDiv dangerouslySetInnerHTML={{ __html: "<ul><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li></ul>" }} /> */}
+          <StyledTextBlob>
+            <ul>
+              <li>Suggest a restuarant based on cuisine type</li>
+              <li>Suggest based on delivery, takeaway or dine-out option</li>
+              <li>Tell you information about opening and contact hours</li>
+              <li>Bring you the menu for selected restaurant</li>
+            </ul>
+          </StyledTextBlob>
+          <br></br>
+          <br></br>
+          <br></br>
+          <StyledSubtitle>Still cant decide?</StyledSubtitle>
+          <div>
+              <Link
+                activeClass="active"
+                to="trending"
+                spy={true}
+                smooth={true}
+                duration={700}
+              >
+            <StyledEmailLink href={``}>
+                See Trending
+            </StyledEmailLink>
+              </Link>
+          </div>
+        </StyledTextDiv>
       </MainArea>
     </StyledContainer>
   );

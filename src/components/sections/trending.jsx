@@ -21,8 +21,8 @@ const StyledContainer = styled(Section)`
 `;
 const StyledTitle = styled.h2`
   // color: ${colors.cream_text};
-  height: 150px;
-  font-size: 80px;
+  height: 80px;
+  font-size: 50px;
   line-height: 1.1;
   margin: 0;
   @media (max-width: 63em) {
@@ -63,7 +63,7 @@ const StyledWrapper = styled.div`
   margin: auto:
   height: 350px;
   display: grid;
-  grid-template-columns: 250px 250px 250px;
+  grid-template-columns: 250px 250px 250px 250px;
   grid-gap: 30px;
 `;
 
@@ -192,6 +192,26 @@ const Trending = () => {
           <StyledRestaurantLocality>{currentTrending[5]["restaurant"]["location"]["locality"]}</StyledRestaurantLocality>
           <br></br>
           <StyledRestaurantCategory>{currentTrending[5]["restaurant"]["cuisines"]}</StyledRestaurantCategory>
+        </StyledBox>
+        <StyledBox>
+          <StyledImg alt="test" src={currentTrending[6]["restaurant"]["thumb"]} />
+          <StyledRestaurantName>{currentTrending[6]["restaurant"]["name"]}</StyledRestaurantName>
+          <br></br>
+          <StyledRestaurantRating>Rating: {currentTrending[6]["restaurant"]["user_rating"]["aggregate_rating"]} ({currentTrending[6]["restaurant"]["user_rating"]["votes"]})</StyledRestaurantRating>
+          <br></br>
+          <StyledRestaurantLocality>{currentTrending[6]["restaurant"]["location"]["locality"]}</StyledRestaurantLocality>
+          <br></br>
+          <StyledRestaurantCategory>{currentTrending[6]["restaurant"]["cuisines"]}</StyledRestaurantCategory>
+        </StyledBox>
+        <StyledBox>
+          <StyledImg alt="test" src={currentTrending[7]["restaurant"]["thumb"]} />
+          <StyledRestaurantName>{currentTrending[7]["restaurant"]["name"]}</StyledRestaurantName>
+          <br></br>
+          <StyledRestaurantRating>Rating: {currentTrending[7]["restaurant"]["user_rating"]["aggregate_rating"]} ({currentTrending[7]["restaurant"]["user_rating"]["votes"]})</StyledRestaurantRating>
+          <br></br>
+          <StyledRestaurantLocality>{currentTrending[7]["restaurant"]["location"]["locality"]}</StyledRestaurantLocality>
+          <br></br>
+          <StyledRestaurantCategory>{currentTrending[7]["restaurant"]["cuisines"]}</StyledRestaurantCategory>
         </StyledBox>
       </StyledWrapper>
     </StyledContainer>

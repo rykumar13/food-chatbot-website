@@ -2,19 +2,19 @@ module.exports = {
     navLinks: [
       {
         name: 'Home',
-        url: '#home',
+        url: 'home',
       },
       {
         name: 'Chatbot',
-        url: '#chatbot',
+        url: 'Chatbot',
       },
       {
         name: 'Trending',
-        url: '#trending',
+        url: 'trending',
       },
       {
         name: 'About',
-        url: '#about',
+        url: 'about',
       },
     ],
     colors: {
