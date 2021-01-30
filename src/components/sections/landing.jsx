@@ -3,17 +3,12 @@ import styled from "styled-components";
 import theme from "../../styles/theme";
 import Section from "../../styles/Section";
 import mixins from "../../styles/mixins";
-import bg from "../../images/landing1.jpg";
 
 import { Link } from "react-scroll";
 
 const { colors, fontSizes, fonts } = theme;
 
 const StyledContainer = styled(Section)`
-  // background-image: url(${bg});
-  // background-position: 50px 50px;
-  // background-size: cover;
-  // object-fit: fill;
   max-width: 100%;
   padding: 60px 0px;
   ${mixins.flexCenter};
@@ -23,14 +18,17 @@ const StyledContainer = styled(Section)`
   height: 250px;
   @media (max-width: 48em) {
     padding-top: 00px;
-  }
-  div {
-    width: 100%;
-  }
+  // }
+  // div {
+  //   width: 100%;
+  // }
 `;
 const StyledTitle = styled.h2`
-  // color: ${colors.cream_text};
+  color: ${colors.white};
+  font-family: 'Titillium Web', sans-serif;
+  // font-weight: 700;
   font-size: 80px;
+  font-style: italic;
   line-height: 1.1;
   margin: 0;
   @media (max-width: 63em) {
@@ -48,9 +46,10 @@ const StyledTitle = styled.h2`
 `;
 
 const StyledSubtitle = styled.h3`
-  // color: ${colors.white};
+  color: ${colors.white};
   font-size: 30px;
   font-weight: normal;
+  font-style: italic;
   line-height: 1.1;
   @media (max-width: 63em) {
     font-size: 25px;
@@ -85,16 +84,15 @@ const Landing = () => {
       </StyledSubtitle>
       <StyledSubtitle>Powered by Zomato.</StyledSubtitle>
       <StyledGetStartedContainer>
-        
-          <Link
-                    activeClass="active"
-                    to="Chatbot"
-                    spy={true}
-                    smooth={true}
-                    duration={700}
-                  >
-                    <StyledGetStarted href={``}>Get Started</StyledGetStarted>
-                    </Link>
+        <Link
+          activeClass="active"
+          to="Chatbot"
+          spy={true}
+          smooth={true}
+          duration={700}
+        >
+          <StyledGetStarted href={``}>Get Started</StyledGetStarted>
+        </Link>
       </StyledGetStartedContainer>
     </StyledContainer>
   );

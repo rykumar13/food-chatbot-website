@@ -5,6 +5,7 @@ import ChatbotArea from "./components/sections/ChatbotArea"
 import Trending from "./components/sections/trending"
 import About from "./components/sections/about"
 import GlobalStyle from "./styles/GlobalStyle"
+import LandingBackground from "./components/landingBackground"
 
 import './App.css';
 
@@ -14,6 +15,7 @@ function App() {
     <div className="App">
       <GlobalStyle />
       <Header />
+      <LandingBackground />
       <Landing />
       <ChatbotArea />
       <Trending />

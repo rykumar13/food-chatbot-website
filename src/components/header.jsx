@@ -8,7 +8,7 @@ const { colors, fonts, fontSizes } = theme
 
 const StyledContainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   // align-items: center;
   height: 0px;
   @media (max-width: 63em) {
@@ -19,7 +19,7 @@ const StyledContainer = styled.div`
   }
 `
 const NavList = styled.ol`
-  // color: ${colors.white};
+  color: ${colors.white};
   ${mixins.flexBetween};
   list-style-type: none;
   margin-top: 25px;
