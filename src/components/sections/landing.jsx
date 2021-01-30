@@ -86,12 +86,12 @@ const Landing = () => {
       <StyledGetStartedContainer>
         <Link
           activeClass="active"
-          to="Chatbot"
+          to="LearnMore"
           spy={true}
           smooth={true}
           duration={700}
         >
-          <StyledGetStarted href={``}>Get Started</StyledGetStarted>
+          <StyledGetStarted href={``}>Learn More</StyledGetStarted>
         </Link>
       </StyledGetStartedContainer>
     </StyledContainer>

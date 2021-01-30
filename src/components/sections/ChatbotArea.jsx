@@ -99,6 +99,7 @@ const StyledEmailLink = styled.a`
   ${mixins.smallButton};
   //margin-top: 20px;
 `;
+
 const saveMessages = (messages) => {
   localStorage.setItem("chat_messages", JSON.stringify(messages));
 };

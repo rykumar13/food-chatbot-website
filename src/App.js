@@ -6,6 +6,7 @@ import Trending from "./components/sections/trending"
 import About from "./components/sections/about"
 import GlobalStyle from "./styles/GlobalStyle"
 import LandingBackground from "./components/landingBackground"
+import LearnMore from "./components/sections/LearnMore"
 
 import './App.css';
 
@@ -17,6 +18,7 @@ function App() {
       <Header />
       <LandingBackground />
       <Landing />
+      <LearnMore />
       <ChatbotArea />
       <Trending />
       <About />
