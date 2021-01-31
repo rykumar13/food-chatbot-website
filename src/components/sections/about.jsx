@@ -26,6 +26,7 @@ const StyledTitle = styled.h4`
   font-size: 50px;
   line-height: 1.1;
   margin: 0;
+  font-style: italic;
   @media (max-width: 63em) {
     font-size: 50px;
   }

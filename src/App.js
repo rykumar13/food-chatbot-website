@@ -18,7 +18,6 @@ function App() {
       <Header />
       <LandingBackground />
       <Landing />
-      <LearnMore />
       <ChatbotArea />
       <Trending />
       <About />

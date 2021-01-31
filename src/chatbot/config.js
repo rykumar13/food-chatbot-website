@@ -41,14 +41,17 @@ import NextRestartBtns3 from "../components/Options/NextRestartBtns/NextRestartB
 import NextRestartBtns4 from "../components/Options/NextRestartBtns/NextRestartBtns4/NextRestartBtns4"
 import NextRestartBtns5 from "../components/Options/NextRestartBtns/NextRestartBtns5/NextRestartBtns5"
 
+import theme from "../styles/theme"
+const { colors, fonts, fontSizes } = theme
+
 const config = {
   botName: "FoodBot",
   customStyles: {
     botMessageBox: {
-      backgroundColor: "#376B7E",
+      backgroundColor: colors.darkNavy,
     },
     chatButton: {
-      backgroundColor: "#5ccc9d",
+      backgroundColor: colors.darkNavy,
     },
   },
   initialMessages: [

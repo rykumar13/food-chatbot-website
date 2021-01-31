@@ -21,6 +21,8 @@ const theme = {
     bg_darkGreen: "#003F3E",
     cream_text: "#EDF5E1",
     navy_text: "#05386B",
+    lightRed: "#C0392B",
+    red: "#A93226"
   },
 
   fonts: {

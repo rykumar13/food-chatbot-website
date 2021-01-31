@@ -18,15 +18,10 @@ const StyledContainer = styled(Section)`
   height: 250px;
   @media (max-width: 48em) {
     padding-top: 00px;
-  // }
-  // div {
-  //   width: 100%;
-  // }
 `;
 const StyledTitle = styled.h2`
   color: ${colors.white};
   font-family: 'Titillium Web', sans-serif;
-  // font-weight: 700;
   font-size: 80px;
   font-style: italic;
   line-height: 1.1;
@@ -86,12 +81,12 @@ const Landing = () => {
       <StyledGetStartedContainer>
         <Link
           activeClass="active"
-          to="LearnMore"
+          to="Chatbot"
           spy={true}
           smooth={true}
           duration={700}
         >
-          <StyledGetStarted href={``}>Learn More</StyledGetStarted>
+          <StyledGetStarted href={``}>Get Started</StyledGetStarted>
         </Link>
       </StyledGetStartedContainer>
     </StyledContainer>

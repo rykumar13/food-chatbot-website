@@ -17,7 +17,7 @@ const StyledContainer = styled(Section)`
   flex-direction: column;
   object-fit: fill;
   min-height: 100vh;
-  text-align: center;
+  // text-align: center;
 
   a {
     ${mixins.inlineLink};
@@ -25,7 +25,8 @@ const StyledContainer = styled(Section)`
 `
 
 const StyledTitle = styled.h4`
-  font-size: 50px;
+  font-size: 80px;
+  font-style: italic;
   line-height: 1.1;
   margin: 0;
   @media (max-width: 63em) {
@@ -42,30 +43,23 @@ const StyledDiv = styled.div`
 
 const StyledTextBlob = styled.div`
   font-family: 'Titillium Web', sans-serif
-  // text-align: left;
   font-weight: 490;
   line-height: 1.7;
-  margin-left: 50px;
   font-size: 18px;
-  // background: ${colors.cream_text};
 `;
 const StyledTextDiv = styled.div`
-  // max-width: 350px;
-  // height: 450px;
-//   margin-top: -120px;
-//   margin-left: 150px;
 `;
 
 const StyledEmailLink = styled.a`
   ${mixins.smallButton};
-  //margin-top: 20px;
 `;
 
 const StyledSubtitle = styled.h3`
   // color: ${colors.white};
   font-size: 30px;
   font-weight: 600;
-  line-height: 1.6;
+  font-style: italic;
+  line-height: 1.1;
   @media (max-width: 63em) {
     font-size: 25px;
   }

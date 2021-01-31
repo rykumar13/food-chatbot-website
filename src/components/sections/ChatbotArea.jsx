@@ -10,31 +10,32 @@ import ActionProvider from "../../chatbot/ActionProvider";
 import config from "../../chatbot/config";
 import MessageParser from "../../chatbot/MessageParser";
 
-import bg from "../../images/landing3.jpg";
+import bg from "../../images/landing10.jpg";
 
 import { Link } from "react-scroll";
 
 const { colors, fonts, fontSizes } = theme;
 
 const StyledContainer = styled(Section)`
-  // color: ${colors.cream_text};
-  // background-image: url(${bg});
-  // background-position: center;
-  // background-size: cover;
+  border-radius: 5px;
+  // background-color: #F1948A;
+  background-image: url(${bg});
+  background-position: center;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
+  // max-width: 100%;
   /// max-height:100%;
   object-fit: fill;
   padding: 60px 0;
   min-height: 100vh;
   @media (max-width: 48em) {
     padding-top: 00px;
-  }
-  div {
-    width: 100%;
-  }
+  // }
+  // div {
+  //   width: 100%;
+  // }
 `;
 
 const StyledTitle = styled.h2`
@@ -57,30 +58,11 @@ const StyledTitle = styled.h2`
 `;
 
 const StyledSubtitle = styled.h3`
-  // color: ${colors.white};
+  color: ${colors.white};
   font-size: 30px;
   font-weight: 600;
   line-height: 1.6;
-  @media (max-width: 63em) {
-    font-size: 25px;
-  }
-  @media (max-width: 48em) {
-    font-size: 20px;
-  }
-  @media (max-width: 30em) {
-    font-size: 15px;
-  }
-  @media (max-width: 24em) {
-    font-size: 10px;
-  }
-`;
-
-const StyledSubtitle2 = styled.h3`
-  // color: ${colors.white};
-  height: 0px;
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 1.6;
+  font-style: italic;
   @media (max-width: 63em) {
     font-size: 25px;
   }
@@ -110,11 +92,12 @@ const loadMessages = () => {
 };
 
 const StyledTextBlob = styled.div`
+  color: ${colors.white};
   font-family: 'Titillium Web', sans-serif
   // text-align: left;
   font-weight: 490;
   line-height: 1.7;
-  margin-left: 50px;
+  // margin-left: 50px;
   font-size: 18px;
   // background: ${colors.cream_text};
 `;
@@ -134,7 +117,7 @@ const MainArea = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 350px;
+  // margin-left: 350px;
 `;
 
 const ChatbotArea = () => {
@@ -155,14 +138,12 @@ const ChatbotArea = () => {
           {/* <StyledDiv dangerouslySetInnerHTML={{ __html: "<ul><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li></ul>" }} /> */}
           <StyledTextBlob>
             <ul>
-              <li>Suggest a restuarant based on cuisine type</li>
+              <li>Suggest a restaurant based on cuisine type</li>
               <li>Suggest based on delivery, takeaway or dine-out option</li>
               <li>Tell you information about opening and contact hours</li>
               <li>Bring you the menu for selected restaurant</li>
             </ul>
           </StyledTextBlob>
-          <br></br>
-          <br></br>
           <br></br>
           <StyledSubtitle>Still cant decide?</StyledSubtitle>
           <div>
