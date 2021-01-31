@@ -83,12 +83,12 @@ const StyledEmailLink = styled.a`
 `;
 
 const saveMessages = (messages) => {
-  localStorage.setItem("chat_messages", JSON.stringify(messages));
+  // localStorage.setItem("chat_messages", JSON.stringify(messages));
 };
 
 const loadMessages = () => {
-  const messages = JSON.parse(localStorage.getItem("chat_messages"));
-  return messages;
+  // const messages = JSON.parse(localStorage.getItem("chat_messages"));
+  // return messages;
 };
 
 const StyledTextBlob = styled.div`
