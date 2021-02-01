@@ -107,8 +107,8 @@ const GlobalStyle = createGlobalStyle`
 
   button {
     cursor: pointer;
-    border: 0;
-    border-radius: 0;
+    // border: 0;
+    // border-radius: 0;
 
     &:focus,
     &:active {
@@ -117,7 +117,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   input, textarea {
-    border-radius: 0;
+    // border-radius: 0;
     outline: 0;
 
     &:focus {

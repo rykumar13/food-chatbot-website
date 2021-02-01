@@ -24,7 +24,7 @@ const Menu3 = ({ cuisineType, categoryType, latitude, longitude }) => {
   const renderMenu = () => {
     return (
       <p className="menu-widget-list-item" key={1}>
-        {menu[2]["restaurant"]["menu_url"]}
+        <a href={menu[2]["restaurant"]["menu_url"]}>{menu[2]["restaurant"]["menu_url"]}</a>
       </p>
     );
   };
