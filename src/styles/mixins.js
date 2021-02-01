@@ -66,8 +66,8 @@ const mixins = {
   `,
 
   smallButton: css`
-    background-color: ${colors.navy};
-    color: ${colors.cream_text};
+    background-color: ${colors.white};
+    // color: ${colors.cream_text};
     border: 1px solid ${colors.black};
     border-radius: ${theme.borderRadius};
     padding: 0.75rem 1rem;

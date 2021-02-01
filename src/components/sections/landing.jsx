@@ -3,12 +3,15 @@ import styled from "styled-components";
 import theme from "../../styles/theme";
 import Section from "../../styles/Section";
 import mixins from "../../styles/mixins";
+import bg from "../../images/landing9.jfif";
 
 import { Link } from "react-scroll";
 
 const { colors, fontSizes, fonts } = theme;
 
 const StyledContainer = styled(Section)`
+  background-image: url(${bg});
+  background-size: cover;
   max-width: 100%;
   padding: 60px 0px;
   ${mixins.flexCenter};

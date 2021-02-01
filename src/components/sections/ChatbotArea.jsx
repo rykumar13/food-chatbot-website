@@ -10,7 +10,7 @@ import ActionProvider from "../../chatbot/ActionProvider";
 import config from "../../chatbot/config";
 import MessageParser from "../../chatbot/MessageParser";
 
-import bg from "../../images/landing10.jpg";
+import bg from "../../images/landing9.jfif";
 
 import { Link } from "react-scroll";
 
@@ -18,14 +18,13 @@ const { colors, fonts, fontSizes } = theme;
 
 const StyledContainer = styled(Section)`
   border-radius: 5px;
-  // background-color: #F1948A;
   background-image: url(${bg});
   background-position: center;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  // max-width: 100%;
+  max-width: 100%;
   /// max-height:100%;
   object-fit: fill;
   padding: 60px 0;
@@ -39,7 +38,7 @@ const StyledContainer = styled(Section)`
 `;
 
 const StyledTitle = styled.h2`
-  // color: ${colors.white};
+  color: ${colors.white};
   font-size: 80px;
   line-height: 1.1;
   margin: 0;
@@ -95,10 +94,11 @@ const StyledTextBlob = styled.div`
   color: ${colors.white};
   font-family: 'Titillium Web', sans-serif
   // text-align: left;
-  font-weight: 490;
+  font-weight: bold;
   line-height: 1.7;
   // margin-left: 50px;
-  font-size: 18px;
+  font-size: 20px;
+  font-style: italic;
   // background: ${colors.cream_text};
 `;
 const StyledTextDiv = styled.div`
