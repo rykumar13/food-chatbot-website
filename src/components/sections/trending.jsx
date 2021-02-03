@@ -64,11 +64,23 @@ const StyledSubtitle = styled.h3`
 
 const StyledWrapper = styled.div`
   //position: absolute; /* or absolute */
-  margin: auto:
-  height: 350px;
-  display: grid;
-  grid-template-columns: 250px 250px 250px 250px;
-  grid-gap: 30px;
+    margin: auto:
+    height: 350px;
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-gap: 30px;
+
+    @media (max-width: 1200px) {
+      grid-template-columns: 250px 250px 250px;
+    }
+
+    @media (max-width: 900px) {
+      grid-template-columns: 250px 250px;
+    }
+
+    @media (max-width: 600px) {
+      grid-template-columns: 250px;
+    }
 `;
 
 const StyledBox = styled.div`

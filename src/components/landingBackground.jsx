@@ -6,7 +6,7 @@ import mixins from "../styles/mixins";
 import bg from "../images/landing9.jfif";
 
 const StyledBackgroundImage = styled.img`
-position: absolute;
+// position: absolute;
 background-image: url(${bg});
 background-size: cover;
 width: 100%;

@@ -12,6 +12,7 @@ const { colors, fontSizes, fonts } = theme;
 const StyledContainer = styled(Section)`
   background-image: url(${bg});
   background-size: cover;
+  background-position: center;
   max-width: 100%;
   padding: 60px 0px;
   ${mixins.flexCenter};
@@ -19,8 +20,6 @@ const StyledContainer = styled(Section)`
   align-items: flex-center;
   min-height: 100vh;
   height: 250px;
-  @media (max-width: 48em) {
-    padding-top: 00px;
 `;
 const StyledTitle = styled.h2`
   color: ${colors.white};

@@ -24,7 +24,7 @@ export const getRestaurants = async (
 
 export const getTrending = async () => {
    let data = await fetch(
-     `${baseURL}search?collection_id=1&entity_id=70`,
+     `${baseURL}search?collection_id=1&lat=-36.8483&lon=174.7626`,
      {
        method: "GET",
        headers: {

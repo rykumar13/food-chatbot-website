@@ -8,14 +8,17 @@ const { colors, fonts, fontSizes } = theme;
 
 const StyledContainer = styled.div`
   display: flex;
-  justify-content: space-between;
-  // align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 0px;
   @media (max-width: 63em) {
     padding: 0 40px;
   }
   @media (max-width: 48em) {
     padding: 0 25px;
+  }
+  @media (max-width: 400px) {
+    display: none;
   }
 `;
 const NavList = styled.ol`
@@ -31,26 +34,19 @@ const NavListItem = styled.li`
 `;
 const MenuLink = styled.a`
   font-family: 'Titillium Web', sans-serif
-  font-size: ${fontSizes.lg};
-  font-weight: 500;
+  font-size: ${fontSizes.xl};
+  font-weight: 600;
+`;
+
+const SignUp = styled.div`
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const Header = () => {
   return (
     <StyledContainer>
-      <NavList>
-        <NavListItem>
-          <MenuLink>
-            <Link>Sign up</Link>
-          </MenuLink>
-        </NavListItem>
-        <NavListItem>
-          <MenuLink>
-            <Link>Login</Link>
-          </MenuLink>
-        </NavListItem>
-      </NavList>
-      a
       <NavList>
         {navLinks.map(({ url, name }) => (
           <NavListItem>

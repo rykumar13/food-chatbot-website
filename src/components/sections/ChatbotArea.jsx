@@ -93,10 +93,8 @@ const loadMessages = () => {
 const StyledTextBlob = styled.div`
   color: ${colors.white};
   font-family: 'Titillium Web', sans-serif
-  // text-align: left;
   font-weight: bold;
   line-height: 1.7;
-  // margin-left: 50px;
   font-size: 20px;
   font-style: italic;
   // background: ${colors.cream_text};
@@ -118,6 +116,10 @@ const MainArea = styled.div`
   justify-content: space-between;
   align-items: center;
   // margin-left: 350px;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 
 const ChatbotArea = () => {
