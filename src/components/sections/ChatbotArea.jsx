@@ -4,7 +4,6 @@ import Chatbot from "react-chatbot-kit";
 import styled from "styled-components";
 import theme from "../../styles/theme";
 import Section from "../../styles/Section";
-import mixins from "../../styles/mixins";
 
 import ActionProvider from "../../chatbot/ActionProvider";
 import config from "../../chatbot/config";
