@@ -7,12 +7,10 @@ import bg from "../../images/landing9.jfif";
 
 import { Link } from "react-scroll";
 
-const { colors, fontSizes, fonts } = theme;
+const { colors } = theme;
 
 const StyledContainer = styled(Section)`
-  background-image: url(${bg});
-  background-size: cover;
-  background-position: center;
+  background-color: ${colors.navy};
   max-width: 100%;
   padding: 60px 0px;
   ${mixins.flexCenter};
@@ -22,7 +20,7 @@ const StyledContainer = styled(Section)`
   height: 250px;
 `;
 const StyledTitle = styled.h2`
-  color: ${colors.white};
+  color: ${colors.cream_text};
   font-family: 'Titillium Web', sans-serif;
   font-size: 80px;
   font-style: italic;
@@ -43,7 +41,7 @@ const StyledTitle = styled.h2`
 `;
 
 const StyledSubtitle = styled.h3`
-  color: ${colors.white};
+  color: ${colors.cream_text};
   font-size: 30px;
   font-weight: normal;
   font-style: italic;
@@ -57,8 +55,8 @@ const StyledSubtitle = styled.h3`
   @media (max-width: 30em) {
     font-size: 15px;
   }
-  @media (max-width: 24em) {
-    font-size: 10px;
+  @media (max-width: 330px) {
+    font-size: 12px;
   }
 `;
 

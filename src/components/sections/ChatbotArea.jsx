@@ -14,13 +14,10 @@ import bg from "../../images/landing9.jfif";
 
 import { Link } from "react-scroll";
 
-const { colors, fonts, fontSizes } = theme;
+const { colors } = theme;
 
 const StyledContainer = styled(Section)`
-  border-radius: 5px;
-  background-image: url(${bg});
-  background-position: center;
-  background-size: cover;
+  background-color: ${colors.navy};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,31 +26,13 @@ const StyledContainer = styled(Section)`
   object-fit: fill;
   padding: 60px 0;
   min-height: 100vh;
+  word-wrap: break-word;
   @media (max-width: 48em) {
-    padding-top: 00px;
+    padding: 60px 0;
   // }
   // div {
   //   width: 100%;
   // }
-`;
-
-const StyledTitle = styled.h2`
-  color: ${colors.white};
-  font-size: 80px;
-  line-height: 1.1;
-  margin: 0;
-  @media (max-width: 63em) {
-    font-size: 70px;
-  }
-  @media (max-width: 48em) {
-    font-size: 60px;
-  }
-  @media (max-width: 30em) {
-    font-size: 50px;
-  }
-  @media (max-width: 24em) {
-    font-size: 40px;
-  }
 `;
 
 const StyledSubtitle = styled.h3`
@@ -68,12 +47,12 @@ const StyledSubtitle = styled.h3`
   @media (max-width: 48em) {
     font-size: 20px;
   }
-  @media (max-width: 30em) {
-    font-size: 15px;
-  }
-  @media (max-width: 24em) {
-    font-size: 10px;
-  }
+  // @media (max-width: 30em) {
+  //   font-size: 15px;
+  // }
+  // @media (max-width: 24em) {
+  //   font-size: 10px;
+  // }
 `;
 
 const StyledEmailLink = styled.a`
@@ -97,17 +76,26 @@ const StyledTextBlob = styled.div`
   line-height: 1.7;
   font-size: 20px;
   font-style: italic;
+  word-wrap: break-word;
+  margin-left: 20px;
   // background: ${colors.cream_text};
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 `;
 const StyledTextDiv = styled.div`
   // max-width: 350px;
   // height: 450px;
-  margin-top: -120px;
-  margin-left: 150px;
+  // margin-top: -120px;
+  //margin-left: 150px;
+  // @media (max-width: 590px) {
+  //   margin-left: 25px;
+  // }
 `;
 
 const StyledChat = styled.div`
-  max-width: 25%;
+  padding: 30px 0;
+  // max-width: 25%;
   // margin-right: 300px;
 `;
 
@@ -117,7 +105,7 @@ const MainArea = styled.div`
   align-items: center;
   // margin-left: 350px;
 
-  @media (max-width: 800px) {
+  @media (max-width: 1200px) {
     flex-direction: column;
   }
 `;
@@ -135,9 +123,8 @@ const ChatbotArea = () => {
             saveMessages={saveMessages}
           />
         </StyledChat>
-        <StyledTextDiv>
+        {/* <StyledTextDiv>
           <StyledSubtitle>Things I can do...</StyledSubtitle>
-          {/* <StyledDiv dangerouslySetInnerHTML={{ __html: "<ul><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li><li>Placeholder put something here to make look more filled.</li></ul>" }} /> */}
           <StyledTextBlob>
             <ul>
               <li>Suggest a restaurant based on cuisine type</li>
@@ -161,7 +148,7 @@ const ChatbotArea = () => {
             </StyledEmailLink>
               </Link>
           </div>
-        </StyledTextDiv>
+        </StyledTextDiv> */}
       </MainArea>
     </StyledContainer>
   );

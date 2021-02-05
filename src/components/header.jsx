@@ -4,7 +4,7 @@ import theme from "../styles/theme";
 import { navLinks } from "../config";
 import mixins from "../styles/mixins";
 import { Link } from "react-scroll";
-const { colors, fonts, fontSizes } = theme;
+const { colors, fontSizes } = theme;
 
 const StyledContainer = styled.div`
   display: flex;
@@ -22,7 +22,7 @@ const StyledContainer = styled.div`
   }
 `;
 const NavList = styled.ol`
-  color: ${colors.white};
+color: ${colors.cream_text};
   ${mixins.flexBetween};
   list-style-type: none;
   margin-top: 25px;
@@ -36,12 +36,6 @@ const MenuLink = styled.a`
   font-family: 'Titillium Web', sans-serif
   font-size: ${fontSizes.xl};
   font-weight: 600;
-`;
-
-const SignUp = styled.div`
-  @media (max-width: 768px) {
-    display: none;
-  }
 `;
 
 const Header = () => {

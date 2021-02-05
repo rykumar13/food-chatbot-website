@@ -1,15 +1,12 @@
 import React from "react"
 import styled from "styled-components"
-import theme from "../../styles/theme"
 import Section from "../../styles/Section"
 import mixins from "../../styles/mixins"
-import bg from "../../images/landing4.jpg";
-const { fontSizes, fonts, colors } = theme
+import theme from "../../styles/theme";
+const { colors } = theme;
 
 const StyledContainer = styled(Section)`
-  // background-image: url(${bg});
-  // background-position: center;
-  // background-size: cover;
+  background-color: ${colors.navy};
   max-width: 100%;
   ${mixins.flexCenter};
   flex-direction: column;
@@ -35,14 +32,20 @@ const StyledTitle = styled.h4`
   }
 `
 
-const StyledDiv = styled.div`
-  font-family: ${fonts.Calibre};
-`
 const StyledSourceCode = styled.a`
   ${mixins.smallButton};
   margin-top: 20px;
 `;
 
+const StyledTextBlob = styled.div`
+color: ${colors.cream_text};
+@media (max-width: 425px) {
+  font-size: 14px;
+}
+@media (max-width: 350px) {
+  font-size: 12px;
+}
+`;
 
 const About = () => {
 
@@ -50,7 +53,7 @@ const About = () => {
     <StyledContainer id="about">
       <StyledTitle>About FoodBot</StyledTitle>
       <div>
-          <div>Made using, react, React-chatbot-kit library, Zomato api</div>
+          <StyledTextBlob>Made using, react, React-chatbot-kit library, Zomato api</StyledTextBlob>
           <StyledSourceCode href={`https://github.com/rykumar13/react-food-chatbot-website`}>
           Source
         </StyledSourceCode>

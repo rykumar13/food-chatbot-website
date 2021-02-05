@@ -4,7 +4,7 @@ import { getRestaurants } from "../../../chatbot/data/data";
 
 import "./Menu.css";
 
-const Menu4 = ({ cuisineType, categoryType, latitude, longitude }) => {
+const Menu4 = ({ cuisineType, categoryType, latitude, longitude, scrollIntoView }) => {
   const [menu, setMenu] = useState(null);
 
   useEffect(() => {
@@ -21,10 +21,12 @@ const Menu4 = ({ cuisineType, categoryType, latitude, longitude }) => {
     getMenu();
   }, [cuisineType, categoryType, latitude, longitude]);
 
+  useEffect(() => scrollIntoView());
+
   const renderMenu = () => {
     return (
       <p className="menu-widget-list-item" key={1}>
-        <a href={menu[3]["restaurant"]["menu_url"]}>{menu[3]["restaurant"]["menu_url"]}</a>
+        <a href={menu[3]["restaurant"]["menu_url"]}>{menu[3]["restaurant"]["name"]}</a>
       </p>
     );
   };

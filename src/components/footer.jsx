@@ -23,6 +23,7 @@ const StyledMetadata = styled.div`
 
 const StyledGitHubLink = styled.a`
   color: ${colors.cream_text};
+  text-decoration: none;
   padding: 10px;
 `;
 

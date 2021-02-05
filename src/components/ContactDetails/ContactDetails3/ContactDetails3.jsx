@@ -4,7 +4,7 @@ import { getRestaurants } from "../../../chatbot/data/data";
 
 import "./ContactDetails3.css";
 
-const ContactDetails3 = ({ cuisineType, categoryType, latitude, longitude }) => {
+const ContactDetails3 = ({ cuisineType, categoryType, latitude, longitude, scrollIntoView }) => {
   const [ContactDetails3, setContactDetails3] = useState(null);
 
   useEffect(() => {
@@ -21,10 +21,11 @@ const ContactDetails3 = ({ cuisineType, categoryType, latitude, longitude }) => 
     getContactDetails3();
   }, [cuisineType, categoryType, latitude, longitude]);
 
+  useEffect(() => scrollIntoView());
+
   const renderContactDetails3 = () => {
     return (
-      <p className="ContactDetails3-widget-list-item" key={1}>
-        {ContactDetails3[2]["restaurant"]["phone_numbers"]}
+      <p className="ContactDetails3-widget-list-item" key={1}>Contact: {ContactDetails3[2]["restaurant"]["phone_numbers"]}
       </p>
     );
   };

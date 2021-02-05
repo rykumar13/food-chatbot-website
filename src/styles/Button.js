@@ -4,8 +4,8 @@ const { colors, fontSizes, fonts } = theme
 
 const Button = styled.button`
   background-color: transparent;
-  color: ${colors.green};
-  border: 1px solid ${colors.green};
+  color: ${colors.cream_text};
+  // border: 1px solid ${colors.green};
   border-radius: ${theme.borderRadius};
   font-size: ${fontSizes.smish};
   font-family: 'Titillium Web', sans-serif
@@ -18,7 +18,7 @@ const Button = styled.button`
   &:hover,
   &:focus,
   &:active {
-    background-color: ${colors.transGreen};
+    background-color: ${colors.navy};
     outline: none;
   }
   &:after {

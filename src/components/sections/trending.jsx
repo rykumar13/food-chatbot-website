@@ -2,64 +2,42 @@ import { React, useState, useEffect } from "react";
 import styled from "styled-components";
 import theme from "../../styles/theme";
 import Section from "../../styles/Section";
-import mixins from "../../styles/mixins";
 import { getTrending } from "../../chatbot/data/data";
 import bg from "../../images/landing9.jfif";
 
-const { colors, fonts, fontSizes } = theme;
+const { colors } = theme;
 
 const StyledContainer = styled(Section)`
-  // background-image: url(${bg});
-  // background-position: center;
-  // background-size: cover;
+  background-color: ${colors.navy};
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 100%;
   padding: 60px 0;
   align-items: center;
-  @media (max-width: 48em) {
-    padding-top: 00px;
-  }
+  // @media (max-width: 48em) {
+  //   padding-top: 00px;
+  // }
 `;
 const StyledTitle = styled.h2`
-  // color: ${colors.cream_text};
+  color: ${colors.cream_text};
   height: 80px;
   font-size: 50px;
   line-height: 1.1;
   font-style: italic;
   margin: 0;
   @media (max-width: 63em) {
-    font-size: 70px;
-  }
-  @media (max-width: 48em) {
-    font-size: 60px;
-  }
-  @media (max-width: 30em) {
-    font-size: 50px;
-  }
-  @media (max-width: 24em) {
     font-size: 40px;
   }
-`;
-
-const StyledSubtitle = styled.h3`
-  color: ${colors.cream_text};
-  font-size: 30px;
-  font-weight: normal;
-  line-height: 1.1;
-  @media (max-width: 63em) {
-    font-size: 25px;
-  }
   @media (max-width: 48em) {
-    font-size: 20px;
+    font-size: 30px;
   }
-  @media (max-width: 30em) {
-    font-size: 15px;
-  }
-  @media (max-width: 24em) {
-    font-size: 10px;
-  }
+  // @media (max-width: 30em) {
+  //   font-size: 20px;
+  // }
+  // @media (max-width: 24em) {
+  //   font-size: 20px;
+  // }
 `;
 
 const StyledWrapper = styled.div`
@@ -106,7 +84,7 @@ const StyledRestaurantName = styled.h6`
   display: inline;
   font-size: 1.2rem;
   line-height: 1.5;
-  color: rgb(28, 28, 28);
+  color: ${colors.cream_text};
   font-weight: 600;
 `;
 const StyledRestaurantLocality = styled.h6`
@@ -114,7 +92,7 @@ const StyledRestaurantLocality = styled.h6`
   white-space: nowrap;
   display: inline;
   line-height: 1.5;
-  color: rgb(79, 79, 79);
+  color: ${colors.cream_text};
   font-weight: 400;
 `;
 const StyledRestaurantCategory = styled.h6`
@@ -123,7 +101,7 @@ const StyledRestaurantCategory = styled.h6`
   display: inline;
   font-size: 14px;
   line-height: 1.5;
-  color: rgb(79, 79, 79);
+  color: ${colors.cream_text};
   font-weight: 400;
 `;
 const StyledRestaurantRating = styled.h6`
@@ -132,7 +110,7 @@ const StyledRestaurantRating = styled.h6`
   display: inline;
   font-size: 14px;
   line-height: 1.5;
-  color: rgb(79, 79, 79);
+  color: ${colors.cream_text};
   font-weight: 400;
 `;
 

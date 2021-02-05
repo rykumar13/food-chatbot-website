@@ -4,7 +4,7 @@ import "./Restaurant1.css";
 
 import { getRestaurants } from "../../../chatbot/data/data";
 
-const Restaurant1 = ({ cuisineType, categoryType, latitude, longitude }) => {
+const Restaurant1 = ({ cuisineType, categoryType, latitude, longitude, scrollIntoView }) => {
   const [currentRestaurant, setCurrentRestaurant] = useState(null);
 
   useEffect(() => {
@@ -20,6 +20,8 @@ const Restaurant1 = ({ cuisineType, categoryType, latitude, longitude }) => {
     };
     getRestaurantsList();
   }, [cuisineType, categoryType, latitude, longitude]);
+
+  useEffect(() => scrollIntoView());
 
   const renderRestaurant = () => {
     return (

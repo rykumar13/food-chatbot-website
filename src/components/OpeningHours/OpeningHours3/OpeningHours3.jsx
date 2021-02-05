@@ -4,7 +4,7 @@ import { getRestaurants } from "../../../chatbot/data/data";
 
 import "./OpeningHours3.css";
 
-const OpeningHours3 = ({ cuisineType, categoryType, latitude, longitude }) => {
+const OpeningHours3 = ({ cuisineType, categoryType, latitude, longitude, scrollIntoView }) => {
   const [OpeningHours3, setOpeningHours3] = useState(null);
 
   useEffect(() => {
@@ -20,6 +20,8 @@ const OpeningHours3 = ({ cuisineType, categoryType, latitude, longitude }) => {
     };
     getOpeningHours3();
   }, [cuisineType, categoryType, latitude, longitude]);
+
+  useEffect(() => scrollIntoView());
 
   const renderOpeningHours3 = () => {
     return (

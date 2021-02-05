@@ -42,10 +42,13 @@ const GlobalStyle = createGlobalStyle`
   h2,
   h3,
   h4,
-  h5,
+  h5 {
+    color: ${colors.cream_text};
+  },
   h6 {
     font-weight: 700;
     margin: 0 0 10px 0;
+    color: ${colors.cream_text};
   }
 
   h1 {
@@ -93,7 +96,7 @@ const GlobalStyle = createGlobalStyle`
 
   a {
     display: inline-block;
-    text-decoration: none;
+    // text-decoration: none;
     text-decoration-skip-ink: auto;
     color: inherit;
     position: relative;
@@ -101,7 +104,7 @@ const GlobalStyle = createGlobalStyle`
 
     &:hover,
     &:focus {
-      color: ${colors.navy};
+      color: ${colors.green};
     }
   }
 
@@ -141,7 +144,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     & > code {
-      background-color: ${colors.lightNavy};
+      background-color: ${colors.white};
       color: ${colors.white};
       padding: 0.3em 0.5em;
     }
