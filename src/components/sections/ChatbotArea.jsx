@@ -26,24 +26,6 @@ const StyledContainer = styled(Section)`
     padding: 60px 0;
 `;
 
-const StyledSubtitle = styled.h3`
-  color: ${colors.white};
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 1.6;
-  font-style: italic;
-  @media (max-width: 63em) {
-    font-size: 25px;
-  }
-  @media (max-width: 48em) {
-    font-size: 20px;
-  }
-`;
-
-const StyledEmailLink = styled.a`
-  ${mixins.smallButton};
-`;
-
 const saveMessages = (messages) => {
   // localStorage.setItem("chat_messages", JSON.stringify(messages));
 };
