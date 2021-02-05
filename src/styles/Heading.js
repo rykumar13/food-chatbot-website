@@ -1,6 +1,6 @@
-import styled from "styled-components"
-import theme from './theme';
-import NavLinks from "../config"
+import styled from "styled-components";
+import theme from "./theme";
+
 const { colors } = theme;
 
 const Heading = styled.h3`
@@ -12,7 +12,7 @@ const Heading = styled.h3`
   white-space: nowrap;
   color: ${colors.navy};
   &:after {
-    content: '';
+    content: "";
     display: block;
     height: 1px;
     width: 300px;
@@ -21,6 +21,6 @@ const Heading = styled.h3`
     top: 4px;
     margin-left: 20px;
   }
-`
+`;
 
-export default Heading
+export default Heading;

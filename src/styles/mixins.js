@@ -1,6 +1,7 @@
-import { css } from "styled-components"
-import theme from "./theme"
-const { colors, fontSizes, fonts } = theme
+import { css } from "styled-components";
+import theme from "./theme";
+
+const { colors, fontSizes, fonts } = theme;
 
 const mixins = {
   flexCenter: css`
@@ -154,6 +155,6 @@ const mixins = {
       }
     }
   `,
-}
+};
 
-export default mixins
+export default mixins;

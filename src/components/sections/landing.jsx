@@ -3,8 +3,6 @@ import styled from "styled-components";
 import theme from "../../styles/theme";
 import Section from "../../styles/Section";
 import mixins from "../../styles/mixins";
-import bg from "../../images/landing9.jfif";
-
 import { Link } from "react-scroll";
 
 const { colors } = theme;

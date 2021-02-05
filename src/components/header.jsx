@@ -4,6 +4,7 @@ import theme from "../styles/theme";
 import { navLinks } from "../config";
 import mixins from "../styles/mixins";
 import { Link } from "react-scroll";
+
 const { colors, fontSizes } = theme;
 
 const StyledContainer = styled.div`
@@ -21,17 +22,20 @@ const StyledContainer = styled.div`
     display: none;
   }
 `;
+
 const NavList = styled.ol`
-color: ${colors.cream_text};
+  color: ${colors.cream_text};
   ${mixins.flexBetween};
   list-style-type: none;
   margin-top: 25px;
   margin-right: 80px;
 `;
+
 const NavListItem = styled.li`
   margin: 35px 0px 35px 55px;
   position: relative;
 `;
+
 const MenuLink = styled.a`
   font-family: 'Titillium Web', sans-serif
   font-size: ${fontSizes.xl};

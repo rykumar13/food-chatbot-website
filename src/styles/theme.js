@@ -1,6 +1,6 @@
-const ACCENT = "#64ffda"
-const DARK_BG = "#020c1b"
-const BG = "#0a192f"
+const ACCENT = "#64ffda";
+const DARK_BG = "#020c1b";
+const BG = "#0a192f";
 
 const theme = {
   colors: {
@@ -22,7 +22,7 @@ const theme = {
     cream_text: "#EDF5E1",
     navy_text: "#05386B",
     lightRed: "#C0392B",
-    red: "#A93226"
+    red: "#A93226",
   },
 
   fonts: {
@@ -65,6 +65,6 @@ const theme = {
 
   navDelay: 1000,
   loaderDelay: 2000,
-}
+};
 
-export default theme
+export default theme;

@@ -1,11 +1,11 @@
 import styled from "styled-components"
 import theme from "./theme"
-const { colors, fontSizes, fonts } = theme
+
+const { colors, fontSizes } = theme
 
 const Button = styled.button`
   background-color: transparent;
   color: ${colors.cream_text};
-  // border: 1px solid ${colors.green};
   border-radius: ${theme.borderRadius};
   font-size: ${fontSizes.smish};
   font-family: 'Titillium Web', sans-serif

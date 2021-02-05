@@ -3,7 +3,6 @@ import styled from "styled-components";
 import theme from "../../styles/theme";
 import Section from "../../styles/Section";
 import { getTrending } from "../../chatbot/data/data";
-import bg from "../../images/landing9.jfif";
 
 const { colors } = theme;
 
@@ -13,11 +12,8 @@ const StyledContainer = styled(Section)`
   flex-direction: column;
   justify-content: center;
   max-width: 100%;
-  padding: 60px 0;
+  padding: 140px 0;
   align-items: center;
-  // @media (max-width: 48em) {
-  //   padding-top: 00px;
-  // }
 `;
 const StyledTitle = styled.h2`
   color: ${colors.cream_text};
@@ -32,16 +28,9 @@ const StyledTitle = styled.h2`
   @media (max-width: 48em) {
     font-size: 30px;
   }
-  // @media (max-width: 30em) {
-  //   font-size: 20px;
-  // }
-  // @media (max-width: 24em) {
-  //   font-size: 20px;
-  // }
 `;
 
 const StyledWrapper = styled.div`
-  //position: absolute; /* or absolute */
     margin: auto:
     height: 350px;
     display: grid;

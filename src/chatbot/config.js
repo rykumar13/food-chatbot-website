@@ -17,32 +17,32 @@ import MenuSkipBtns3 from "../components/Options/MenuSkipBtns/MenuSkipBtns3/Menu
 import MenuSkipBtns4 from "../components/Options/MenuSkipBtns/MenuSkipBtns4/MenuSkipBtns4";
 import MenuSkipBtns5 from "../components/Options/MenuSkipBtns/MenuSkipBtns5/MenuSkipBtns5";
 
-import Menu1 from "../components/Menu/Menu1/Menu1.jsx"
-import Menu2 from "../components/Menu/Menu2/Menu2.jsx"
-import Menu3 from "../components/Menu/Menu3/Menu3.jsx"
-import Menu4 from "../components/Menu/Menu4/Menu4.jsx"
-import Menu5 from "../components/Menu/Menu5/Menu5.jsx"
+import Menu1 from "../components/Menu/Menu1/Menu1.jsx";
+import Menu2 from "../components/Menu/Menu2/Menu2.jsx";
+import Menu3 from "../components/Menu/Menu3/Menu3.jsx";
+import Menu4 from "../components/Menu/Menu4/Menu4.jsx";
+import Menu5 from "../components/Menu/Menu5/Menu5.jsx";
 
-import OpeningHours1 from "../components/OpeningHours/OpeningHours1/OpeningHours1"
-import OpeningHours2 from "../components/OpeningHours/OpeningHours2/OpeningHours2"
-import OpeningHours3 from "../components/OpeningHours/OpeningHours3/OpeningHours3"
-import OpeningHours4 from "../components/OpeningHours/OpeningHours4/OpeningHours4"
-import OpeningHours5 from "../components/OpeningHours/OpeningHours5/OpeningHours5"
+import OpeningHours1 from "../components/OpeningHours/OpeningHours1/OpeningHours1";
+import OpeningHours2 from "../components/OpeningHours/OpeningHours2/OpeningHours2";
+import OpeningHours3 from "../components/OpeningHours/OpeningHours3/OpeningHours3";
+import OpeningHours4 from "../components/OpeningHours/OpeningHours4/OpeningHours4";
+import OpeningHours5 from "../components/OpeningHours/OpeningHours5/OpeningHours5";
 
-import ContactDetails1 from "../components/ContactDetails/ContactDetails1/ContactDetails1"
-import ContactDetails2 from "../components/ContactDetails/ContactDetails2/ContactDetails2"
-import ContactDetails3 from "../components/ContactDetails/ContactDetails3/ContactDetails3"
-import ContactDetails4 from "../components/ContactDetails/ContactDetails4/ContactDetails4"
-import ContactDetails5 from "../components/ContactDetails/ContactDetails5/ContactDetails5"
+import ContactDetails1 from "../components/ContactDetails/ContactDetails1/ContactDetails1";
+import ContactDetails2 from "../components/ContactDetails/ContactDetails2/ContactDetails2";
+import ContactDetails3 from "../components/ContactDetails/ContactDetails3/ContactDetails3";
+import ContactDetails4 from "../components/ContactDetails/ContactDetails4/ContactDetails4";
+import ContactDetails5 from "../components/ContactDetails/ContactDetails5/ContactDetails5";
 
-import NextRestartBtns1 from "../components/Options/NextRestartBtns/NextRestartBtns1/NextRestartBtns1"
-import NextRestartBtns2 from "../components/Options/NextRestartBtns/NextRestartBtns2/NextRestartBtns2"
-import NextRestartBtns3 from "../components/Options/NextRestartBtns/NextRestartBtns3/NextRestartBtns3"
-import NextRestartBtns4 from "../components/Options/NextRestartBtns/NextRestartBtns4/NextRestartBtns4"
-import NextRestartBtns5 from "../components/Options/NextRestartBtns/NextRestartBtns5/NextRestartBtns5"
+import NextRestartBtns1 from "../components/Options/NextRestartBtns/NextRestartBtns1/NextRestartBtns1";
+import NextRestartBtns2 from "../components/Options/NextRestartBtns/NextRestartBtns2/NextRestartBtns2";
+import NextRestartBtns3 from "../components/Options/NextRestartBtns/NextRestartBtns3/NextRestartBtns3";
+import NextRestartBtns4 from "../components/Options/NextRestartBtns/NextRestartBtns4/NextRestartBtns4";
+import NextRestartBtns5 from "../components/Options/NextRestartBtns/NextRestartBtns5/NextRestartBtns5";
 
-import theme from "../styles/theme"
-const { colors } = theme
+import theme from "../styles/theme";
+const { colors } = theme;
 
 const config = {
   botName: "FoodBot",
@@ -51,7 +51,7 @@ const config = {
       backgroundColor: colors.navy,
     },
     chatButton: {
-      backgroundColor: colors.darkNavy,
+      backgroundColor: colors.red,
     },
   },
   initialMessages: [
@@ -72,7 +72,7 @@ const config = {
         "categoryType",
         "latitude",
         "longitude",
-      ]
+      ],
     },
     {
       widgetName: "OpeningHours4",
@@ -83,7 +83,7 @@ const config = {
         "categoryType",
         "latitude",
         "longitude",
-      ]
+      ],
     },
     {
       widgetName: "OpeningHours3",
@@ -94,7 +94,7 @@ const config = {
         "categoryType",
         "latitude",
         "longitude",
-      ]
+      ],
     },
     {
       widgetName: "OpeningHours2",
@@ -105,7 +105,7 @@ const config = {
         "categoryType",
         "latitude",
         "longitude",
-      ]
+      ],
     },
     {
       widgetName: "OpeningHours1",
@@ -116,7 +116,7 @@ const config = {
         "categoryType",
         "latitude",
         "longitude",
-      ]
+      ],
     },
     {
       widgetName: "ContactDetails5",
@@ -127,7 +127,7 @@ const config = {
         "categoryType",
         "latitude",
         "longitude",
-      ]
+      ],
     },
     {
       widgetName: "ContactDetails4",
@@ -138,7 +138,7 @@ const config = {
         "categoryType",
         "latitude",
         "longitude",
-      ]
+      ],
     },
     {
       widgetName: "ContactDetails3",
@@ -149,7 +149,7 @@ const config = {
         "categoryType",
         "latitude",
         "longitude",
-      ]
+      ],
     },
     {
       widgetName: "ContactDetails2",
@@ -160,7 +160,7 @@ const config = {
         "categoryType",
         "latitude",
         "longitude",
-      ]
+      ],
     },
     {
       widgetName: "ContactDetails1",
@@ -171,7 +171,7 @@ const config = {
         "categoryType",
         "latitude",
         "longitude",
-      ]
+      ],
     },
     {
       widgetName: "NextRestartBtns5",
@@ -202,7 +202,7 @@ const config = {
         "categoryType",
         "latitude",
         "longitude",
-      ]
+      ],
     },
     {
       widgetName: "Menu4",
@@ -213,7 +213,7 @@ const config = {
         "categoryType",
         "latitude",
         "longitude",
-      ]
+      ],
     },
     {
       widgetName: "Menu3",
@@ -224,7 +224,7 @@ const config = {
         "categoryType",
         "latitude",
         "longitude",
-      ]
+      ],
     },
     {
       widgetName: "Menu2",
@@ -235,7 +235,7 @@ const config = {
         "categoryType",
         "latitude",
         "longitude",
-      ]
+      ],
     },
     {
       widgetName: "Menu1",
@@ -246,7 +246,7 @@ const config = {
         "categoryType",
         "latitude",
         "longitude",
-      ]
+      ],
     },
     {
       widgetName: "MenuSkipBtns1",
@@ -269,19 +269,19 @@ const config = {
       widgetFunc: (props) => <MenuSkipBtns5 {...props} />,
     },
     {
-        widgetName: "CuisineTypes",
-        widgetFunc: (props) => <CuisineTypes {...props} />,
-        mapStateToProps: ["cuisineTypes"]
-      },
+      widgetName: "CuisineTypes",
+      widgetFunc: (props) => <CuisineTypes {...props} />,
+      mapStateToProps: ["cuisineTypes"],
+    },
     {
       widgetName: "GetStartedBtn",
       widgetFunc: (props) => <GetStartedBtn {...props} />,
-      mapStateToProps: ["todos"]
+      mapStateToProps: ["todos"],
     },
     {
       widgetName: "categoryTypes",
       widgetFunc: (props) => <CategoryTypes {...props} />,
-      mapStateToProps: ["categoryType"]
+      mapStateToProps: ["categoryType"],
     },
     {
       widgetName: "Restaurant1",
@@ -292,8 +292,8 @@ const config = {
         "categoryType",
         "latitude",
         "longitude",
-        "restaurantId"
-      ]
+        "restaurantId",
+      ],
     },
     {
       widgetName: "Restaurant2",
@@ -304,7 +304,7 @@ const config = {
         "categoryType",
         "latitude",
         "longitude",
-      ]
+      ],
     },
     {
       widgetName: "Restaurant3",
@@ -315,7 +315,7 @@ const config = {
         "categoryType",
         "latitude",
         "longitude",
-      ]
+      ],
     },
     {
       widgetName: "Restaurant4",
@@ -326,7 +326,7 @@ const config = {
         "categoryType",
         "latitude",
         "longitude",
-      ]
+      ],
     },
     {
       widgetName: "Restaurant5",
@@ -337,16 +337,16 @@ const config = {
         "categoryType",
         "latitude",
         "longitude",
-      ]
+      ],
     },
   ],
   state: {
     cuisineType: "",
     categoryType: "",
     restaurants: [],
-    latitude: -36.8483, 
+    latitude: -36.8483,
     longitude: 174.7626,
-  }
+  },
 };
 
 export default config;

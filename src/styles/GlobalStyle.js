@@ -1,10 +1,10 @@
-import { createGlobalStyle } from "styled-components"
-import mixins from "./mixins"
-import theme from "./theme"
-const { colors, fontSizes } = theme
+import { createGlobalStyle } from "styled-components";
+import mixins from "./mixins";
+import theme from "./theme";
+
+const { colors, fontSizes } = theme;
 
 const GlobalStyle = createGlobalStyle`
-
   html {
     box-sizing: border-box;
     max-width: 100%;
@@ -110,8 +110,6 @@ const GlobalStyle = createGlobalStyle`
 
   button {
     cursor: pointer;
-    // border: 0;
-    // border-radius: 0;
 
     &:focus,
     &:active {
@@ -120,7 +118,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   input, textarea {
-    // border-radius: 0;
     outline: 0;
 
     &:focus {
@@ -239,7 +236,6 @@ const GlobalStyle = createGlobalStyle`
       letter-spacing: 0.1em;
     }
   }
+`;
 
-`
-
-export default GlobalStyle
+export default GlobalStyle;
