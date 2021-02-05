@@ -48,10 +48,10 @@ const config = {
   botName: "FoodBot",
   customStyles: {
     botMessageBox: {
-      backgroundColor: colors.navy,
+      backgroundColor: colors.lightNavy,
     },
     chatButton: {
-      backgroundColor: colors.red,
+      backgroundColor: colors.lightRed,
     },
   },
   initialMessages: [
