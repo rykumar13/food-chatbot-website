@@ -1,4 +1,5 @@
 import Header from "./components/header";
+import Head from "./components/head";
 import Footer from "./components/footer";
 import Landing from "./components/sections/landing";
 import ChatbotArea from "./components/sections/ChatbotArea";
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className="App">
       <GlobalStyle />
+      <Head />
       <Header />
       <Landing />
       <ChatbotArea />
