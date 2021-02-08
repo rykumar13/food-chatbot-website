@@ -1,9 +1,10 @@
 <h1 align="center">
-  food-chatbot
+  <a href="https://food-chatbot.netlify.app/" target="_blank">food-chatbot.app
+</a>
 </h1>
 <p align="center">
   
-  The first iteration of <a href="https://food-chatbot.netlify.app/" target="_blank">food-chatbot.com</a> built with <a href="https://fredrikoseberg.github.io/react-chatbot-kit-docs/" target="_blank">react-chatbot-kit</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+  The first iteration of <a href="https://food-chatbot.netlify.app/" target="_blank">food-chatbot.app</a> built with <a href="https://fredrikoseberg.github.io/react-chatbot-kit-docs/" target="_blank">react-chatbot-kit</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
 </p>
 <div align="center">
   <img alt="Logo" src="https://raw.githubusercontent.com/rykumar13/react-food-chatbot-website/master/src/images/website_screenshot.png" />
