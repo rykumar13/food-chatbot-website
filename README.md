@@ -6,24 +6,34 @@
   The first iteration of <a href="https://food-chatbot.netlify.app/" target="_blank">food-chatbot.com</a> built with <a href="https://fredrikoseberg.github.io/react-chatbot-kit-docs/" target="_blank">react-chatbot-kit</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
 </p>
 <div align="center">
-  <img alt="Logo" src="https://raw.githubusercontent.com/rykumar13/portfolio-website/master/website_screenshot.png" />
+  <img alt="Logo" src="https://raw.githubusercontent.com/rykumar13/react-food-chatbot-website/master/src/images/website_screenshot.png" />
 </div>
 <br>
-![](chatbot1.gif)
 <h2> How the chatbot works</h2>
 <p align="center">
+  Chatbot asks the user for a cuisine type, and delivery option this is then converted into a zomato api call which returns suggested restaurants.
   <div align="center">
 </div>
   Things that I can do...
+      <ul>
+     <li>Suggested restaurants based on cuisine</li>
+     <li>Returns menu, opening hours &contact number</li>
+    </ul>
 </p>
+<p align="center">
+<img alt="Logo" src="https://raw.githubusercontent.com/rykumar13/react-food-chatbot-website/master/chatbot1.gif" />
+  </p>
 <br>
 <h2>
 Technologies used
   </h2>
   <p> 
     <ul>
-     <li>Suggested restaurants based on cuisine</li>
-     <li>Returns menu, opening hours &contact number</li>
+     <li>React</li>
+     <li>react-chatbot-kit</li>
+      <li>Zomato api</li>
+      <li>Netlify</li>
+      <li>Javascript ES6</li>
     </ul>
   </p>
 <br>
