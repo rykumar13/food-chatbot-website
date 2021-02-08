@@ -20,7 +20,7 @@
      <li>Returns menu, opening hours &contact number</li>
     </ul>
 </p>
-<h2>Demo</h2>
+<h2 align="center">Demo</h2>
 <p align="center">
 <img alt="Logo" src="https://raw.githubusercontent.com/rykumar13/react-food-chatbot-website/master/chatbot1.gif" />
   </p>
