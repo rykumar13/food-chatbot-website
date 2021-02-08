@@ -14,12 +14,13 @@
   Chatbot asks the user for a cuisine type, and delivery option this is then converted into a zomato api call which returns suggested restaurants.
   <div align="center">
 </div>
-  Things that I can do...
+  <h2>Things that I can do...</h2>
       <ul>
      <li>Suggested restaurants based on cuisine</li>
      <li>Returns menu, opening hours &contact number</li>
     </ul>
 </p>
+<h2>Demo</h2>
 <p align="center">
 <img alt="Logo" src="https://raw.githubusercontent.com/rykumar13/react-food-chatbot-website/master/chatbot1.gif" />
   </p>
