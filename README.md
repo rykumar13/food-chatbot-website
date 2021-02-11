@@ -3,7 +3,6 @@
 </a>
 </h1>
 <p align="center">
-  
   The first iteration of <a href="https://food-chatbot.netlify.app/" target="_blank">food-chatbot.app</a> built with <a href="https://fredrikoseberg.github.io/react-chatbot-kit-docs/" target="_blank">react-chatbot-kit</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
 </p>
 <div align="center">
@@ -42,7 +41,6 @@ Technologies used
 <h2>
 🎨 Colour Reference
 </h2>
-
 | Color          | Hex                                                                |
 | -------------- | ------------------------------------------------------------------ |
 | Cream          | ![#EDF5E1](https://via.placeholder.com/10/EDF5E1?text=+) `#EDF5E1` |
