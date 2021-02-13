@@ -41,6 +41,7 @@ Technologies used
 <h2>
 🎨 Colour Reference
 </h2>
+
 | Color          | Hex                                                                |
 | -------------- | ------------------------------------------------------------------ |
 | Cream          | ![#EDF5E1](https://via.placeholder.com/10/EDF5E1?text=+) `#EDF5E1` |
