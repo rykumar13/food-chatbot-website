@@ -11,7 +11,7 @@
 <br>
 <h2> How the chatbot works</h2>
 <p align="center">
-  Chatbot asks the user for a cuisine type, and delivery option this is then converted into a zomato api call which returns suggested restaurants.
+  Chatbot asks the user for a cuisine type and delivery option - this is then converted into a zomato api call which returns suggested restaurants.
   <div align="center">
 </div>
   <h2>Things that I can do...</h2>
