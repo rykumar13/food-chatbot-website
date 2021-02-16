@@ -16,8 +16,8 @@
 </div>
   <h2>Things that I can do...</h2>
       <ul>
-     <li>Suggested restaurants based on cuisine</li>
-     <li>Returns menu, opening hours & contact number</li>
+     <li>Suggest restaurants based on cuisine</li>
+     <li>Return menu, opening hours & contact number</li>
     </ul>
 </p>
 <h2 align="center">Demo</h2>
